@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Off Grid Systems — Featured project case studies. Real off-grid solar installations across 40+ countries, from alpine villas to Pacific island resorts." />
+  <meta name="keywords" content="off-grid solar projects, solar case studies, autonomous solar installations, photovoltaic projects" />
+  <meta name="author" content="Off Grid Systems" />
+  <meta property="og:type" content="website" />
+  <title>Projects | Off Grid Systems</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .font-heading { font-family: 'Rajdhani', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-surface-900">
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4 lg:py-5">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+        <img src="logo.png" alt="Off Grid Power Systems" class="h-12 w-auto"
+             onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';" />
+        <div id="logo-fallback" class="items-center gap-3" style="display:none;">
+          <div class="relative w-10 h-10 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg,#d97706,#f59e0b);">
+            <i class="fas fa-solar-panel text-black text-base"></i>
+            <span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-brand-400 border-2 border-surface-900 animate-pulse"></span>
+          </div>
+          <div class="leading-none">
+            <span class="font-heading text-[1.2rem] font-bold text-white tracking-widest">OFF GRID</span>
+            <span class="font-heading text-[1.2rem] font-bold text-brand-500 tracking-widest"> SYSTEMS</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"     class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="nav-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="projects.html"  class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="about.html"     class="nav-link" data-i18n="nav.about">About</a>
+        <a href="contact.html"   class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <div class="relative" id="lang-switcher">
+          <button id="lang-btn" onclick="toggleLangMenu()"
+            class="flex items-center gap-1.5 text-slate-400 hover:text-brand-400 text-xs font-bold tracking-wider transition-colors border border-white/10 hover:border-brand-500/30 rounded-lg px-3 py-2">
+            <span id="lang-flag">🇺🇸</span>
+            <span id="lang-code">EN</span>
+            <i class="fas fa-chevron-down text-[9px] transition-transform duration-200" id="lang-chevron"></i>
+          </button>
+          <div id="lang-menu" class="hidden absolute top-full right-0 mt-1.5 rounded-xl border border-white/10 py-1.5 w-36 z-50 shadow-xl">
+            <button onclick="setLang('en')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇺🇸 <span>English</span></button>
+            <button onclick="setLang('ru')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇷🇺 <span>Русский</span></button>
+            <button onclick="setLang('el')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇬🇷 <span>Ελληνικά</span></button>
+          </div>
+        </div>
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+          class="w-9 h-9 rounded-xl border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
+          <i class="fas fa-moon text-sm" id="theme-icon"></i>
+        </button>
+        <a href="tel:+15551234567" class="text-slate-400 hover:text-brand-400 text-sm transition-colors">
+          <i class="fas fa-phone-flip mr-1.5 text-brand-500"></i>+1 (555) 123-4567
+        </a>
+        <a href="contact.html" class="btn-primary px-6 py-2.5 rounded-xl text-sm tracking-wide">
+          <span data-i18n="nav.get-quote">GET A QUOTE</span>
+        </a>
+      </div>
+
+      <button id="hamburger" class="lg:hidden text-slate-400 hover:text-brand-400 transition-colors w-10 h-10 flex items-center justify-center" aria-label="Toggle menu">
+        <i class="fas fa-bars text-xl" id="hamburger-icon"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" aria-hidden="true">
+      <div class="pt-4 pb-5 border-t border-slate-800 mt-4 flex flex-col gap-1">
+        <a href="index.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.solutions">Solutions</a>
+        <a href="projects.html"  class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.projects">Projects</a>
+        <a href="about.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.about">About</a>
+        <a href="contact.html"   class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.contact">Contact</a>
+        <a href="contact.html"   class="mobile-link btn-primary mt-2 px-6 py-3 rounded-xl text-sm tracking-wide text-center"><span data-i18n="nav.get-free-quote">GET A FREE QUOTE</span></a>
+        <div class="flex items-center gap-3 mt-3 px-3">
+          <button onclick="setLang('en')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-en">🇺🇸 EN</button>
+          <button onclick="setLang('ru')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-ru">🇷🇺 RU</button>
+          <button onclick="setLang('el')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-el">🇬🇷 EL</button>
+          <button onclick="toggleTheme()" class="w-9 h-9 rounded-lg border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
+            <i class="fas fa-moon text-sm" id="mob-theme-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE HERO
+═══════════════════════════════════════════════ -->
+<section class="pt-40 pb-20 relative overflow-hidden">
+  <div class="absolute inset-0 hero-bg"></div>
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10 text-center">
+    <div class="section-badge mb-6 reveal"><i class="fas fa-images text-xs"></i> <span data-i18n="proj.badge">Case Studies</span></div>
+    <h1 class="font-heading font-bold text-white mb-4 reveal reveal-delay-1" style="font-size: clamp(2.5rem,6vw,4.5rem);">
+      <span data-i18n="proj.title1">FEATURED</span> <span class="gradient-text" data-i18n="proj.title2">PROJECTS</span>
+    </h1>
+    <p class="text-slate-400 text-lg max-w-2xl mx-auto reveal reveal-delay-2" data-i18n="proj.sub">
+      Real installations. Real results. Explore a selection of our most impactful off-grid energy deployments.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     PROJECT GRID
+═══════════════════════════════════════════════ -->
+<section id="projects" class="py-20 relative">
+  <div class="absolute inset-0 grid-bg opacity-15 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
+
+      <!-- Project 1 -->
+      <div class="proj-card reveal reveal-delay-1">
+        <div class="proj-img h-full" style="background: linear-gradient(135deg, #0d2010 0%, #1a3a1e 50%, #0f2a14 100%);"></div>
+        <div class="proj-overlay"></div>
+        <div class="proj-content">
+          <div class="flex justify-between items-start">
+            <span class="bg-green-500/20 border border-green-500/30 text-green-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">✓ <span data-i18n="proj.status.done">COMPLETED</span></span>
+            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.res">RESIDENTIAL</span>
+          </div>
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-brand-500/15 border border-brand-500/25 flex items-center justify-center mb-3">
+              <i class="fas fa-mountain-sun text-brand-400"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj1.title">Alpine Villa — Swiss Alps</h3>
+            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj1.desc">12 kWp bifacial array + 24 kWh LiFePO₄ bank. Full off-grid operation year-round including harsh alpine winters.</p>
+            <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
+              <span><i class="fas fa-solar-panel text-brand-400 mr-1"></i>12 kWp</span>
+              <span><i class="fas fa-battery-full text-brand-400 mr-1"></i>24 kWh</span>
+              <span><i class="fas fa-calendar text-brand-400 mr-1"></i>2024</span>
+              <span><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Switzerland</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card reveal reveal-delay-2">
+        <div class="proj-img h-full" style="background: linear-gradient(135deg, #1a1500 0%, #2e2600 50%, #1a1500 100%);"></div>
+        <div class="proj-overlay"></div>
+        <div class="proj-content">
+          <div class="flex justify-between items-start">
+            <span class="bg-green-500/20 border border-green-500/30 text-green-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">✓ <span data-i18n="proj.status.done">COMPLETED</span></span>
+            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.agr">AGRICULTURAL</span>
+          </div>
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-brand-500/15 border border-brand-500/25 flex items-center justify-center mb-3">
+              <i class="fas fa-tractor text-brand-400"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj2.title">Outback Farm — Queensland</h3>
+            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj2.desc">45 kWp ground-mount with 100 kWh BYD storage. Powers full farm irrigation, sheds, and 3-bedroom homestead.</p>
+            <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
+              <span><i class="fas fa-solar-panel text-brand-400 mr-1"></i>45 kWp</span>
+              <span><i class="fas fa-battery-full text-brand-400 mr-1"></i>100 kWh</span>
+              <span><i class="fas fa-calendar text-brand-400 mr-1"></i>2023</span>
+              <span><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Australia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-card reveal reveal-delay-3">
+        <div class="proj-img h-full" style="background: linear-gradient(135deg, #070d1a 0%, #0e1a30 50%, #070d1a 100%);"></div>
+        <div class="proj-overlay"></div>
+        <div class="proj-content">
+          <div class="flex justify-between items-start">
+            <span class="bg-blue-500/20 border border-blue-500/30 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">⬡ <span data-i18n="proj.status.wip">IN PROGRESS</span></span>
+            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.com">COMMERCIAL</span>
+          </div>
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-brand-500/15 border border-brand-500/25 flex items-center justify-center mb-3">
+              <i class="fas fa-tower-cell text-brand-400"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj3.title">Telecom Array — Morocco</h3>
+            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj3.desc">20 kWp hybrid system + diesel backup powering 3 telecom towers in extreme desert heat. 99.99% SLA required.</p>
+            <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
+              <span><i class="fas fa-solar-panel text-brand-400 mr-1"></i>20 kWp</span>
+              <span><i class="fas fa-battery-full text-brand-400 mr-1"></i>40 kWh</span>
+              <span><i class="fas fa-calendar text-brand-400 mr-1"></i>2025</span>
+              <span><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Morocco</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Project 4 — full width -->
+    <div class="proj-card reveal" style="height: 280px;">
+      <div class="proj-img h-full" style="background: linear-gradient(135deg, #130a00 0%, #1f1000 30%, #0a0a13 70%, #130a00 100%);"></div>
+      <div class="proj-overlay" style="background: linear-gradient(to right, rgba(9,9,15,0.98) 0%, rgba(9,9,15,0.6) 50%, rgba(9,9,15,0.3) 100%);"></div>
+      <div class="proj-content flex-row items-center">
+        <div class="max-w-lg">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-purple-500/20 border border-purple-500/30 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">★ <span data-i18n="proj.status.flagship">FLAGSHIP</span></span>
+            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.resort">ISLAND RESORT</span>
+          </div>
+          <h3 class="font-heading text-2xl lg:text-3xl font-bold text-white mb-2" data-i18n="proj4.title">Pacific Island Eco-Resort — Fiji</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed" data-i18n="proj4.desc">Our largest residential deployment to date: 120 kWp Canadian Solar array with 240 kWh Pylontech storage. Powers an entire 20-villa eco-resort — zero diesel, zero grid, zero emissions.</p>
+          <div class="flex flex-wrap gap-4 text-xs text-slate-400">
+            <span><i class="fas fa-solar-panel text-brand-400 mr-1.5"></i>120 kWp</span>
+            <span><i class="fas fa-battery-full text-brand-400 mr-1.5"></i>240 kWh</span>
+            <span><i class="fas fa-calendar text-brand-400 mr-1.5"></i>2022</span>
+            <span><i class="fas fa-map-marker-alt text-brand-400 mr-1.5"></i>Fiji, South Pacific</span>
+            <span><i class="fas fa-leaf text-green-400 mr-1.5"></i>Zero-emission operation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CTA STRIP
+═══════════════════════════════════════════════ -->
+<section class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0" style="background: linear-gradient(135deg, #0f0a00 0%, #1a1000 40%, #0a0a0f 100%);"></div>
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(245,158,11,0.6),transparent);"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(245,158,11,0.6),transparent);"></div>
+  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(245,158,11,0.07) 0%, transparent 65%);"></div>
+
+  <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center relative z-10 reveal">
+    <h2 class="font-heading font-bold text-white mb-5 leading-tight" style="font-size:clamp(2rem,5vw,3.2rem);">
+      <span data-i18n="proj.cta.title1">WANT A SYSTEM LIKE</span> <span class="gradient-text" data-i18n="proj.cta.title2">THESE?</span>
+    </h2>
+    <p class="text-slate-300 text-lg mb-10 max-w-2xl mx-auto leading-relaxed" data-i18n="proj.cta.sub">
+      Every project starts with a free site analysis and custom design. Tell us about your location and energy needs.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="contact.html" class="btn-primary px-10 py-4 rounded-xl text-base flex items-center gap-2.5">
+        <i class="fas fa-paper-plane text-sm relative z-10"></i>
+        <span data-i18n="cta.btn1">GET MY FREE QUOTE</span>
+      </a>
+      <a href="solutions.html" class="btn-outline px-10 py-4 rounded-xl text-base flex items-center gap-2.5">
+        <i class="fas fa-solar-panel text-sm"></i>
+        <span data-i18n="proj.view-systems">VIEW OUR SYSTEMS</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="bg-surface-900 border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-5">
+          <img src="logo.png" alt="Off Grid Power Systems" class="h-14 w-auto"
+               onerror="this.style.display='none'; document.getElementById('foot-logo-fallback').style.display='flex';" />
+          <div id="foot-logo-fallback" class="items-center gap-3" style="display:none;">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg,#d97706,#f59e0b);">
+              <i class="fas fa-solar-panel text-black text-base"></i>
+            </div>
+            <div class="leading-none">
+              <span class="font-heading text-lg font-bold text-white tracking-widest">OFF GRID</span>
+              <span class="font-heading text-lg font-bold text-brand-500 tracking-widest"> SYSTEMS</span>
+            </div>
+          </div>
+        </a>
+        <p class="text-slate-500 text-sm leading-relaxed mb-6" data-i18n="foot.desc">Engineering energy independence through autonomous solar photovoltaic systems. Trusted by 500+ clients across 40 countries since 2010.</p>
+        <div class="flex gap-2.5">
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="#" aria-label="Twitter / X" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-x-twitter text-sm"></i></a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-instagram text-sm"></i></a>
+          <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-youtube text-sm"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-heading text-[11px] font-bold text-white tracking-widest uppercase mb-5" data-i18n="foot.solutions">Solutions</h4>
+        <ul class="space-y-3">
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.homebase">HomeBase Pro (Residential)</a></li>
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.agrogrid">AgroGrid Elite (Farm)</a></li>
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.wildpower">WildPower Kit (Cabin)</a></li>
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.industrial">IndustrialCore (Commercial)</a></li>
+          <li><a href="contact.html"   class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.custom">Custom Engineering</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading text-[11px] font-bold text-white tracking-widest uppercase mb-5" data-i18n="foot.company">Company</h4>
+        <ul class="space-y-3">
+          <li><a href="about.html"    class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.about">About Us</a></li>
+          <li><a href="projects.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.projects">Featured Projects</a></li>
+          <li><a href="about.html"    class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.why">Why Choose Us</a></li>
+          <li><a href="#"             class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.blog">Technical Blog</a></li>
+          <li><a href="#"             class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.careers">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading text-[11px] font-bold text-white tracking-widest uppercase mb-5" data-i18n="foot.contact">Contact</h4>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-2 text-sm text-slate-500"><i class="fas fa-location-dot text-brand-500/60 text-xs mt-1 flex-shrink-0"></i>123 Solar Way, Denver, CO 80201, USA</li>
+          <li class="flex items-center gap-2 text-sm"><i class="fas fa-phone text-brand-500/60 text-xs flex-shrink-0"></i><a href="tel:+15551234567" class="text-slate-500 hover:text-brand-400 transition-colors">+1 (555) 123-4567</a></li>
+          <li class="flex items-center gap-2 text-sm"><i class="fas fa-envelope text-brand-500/60 text-xs flex-shrink-0"></i><a href="mailto:info@offgridsystems.com" class="text-slate-500 hover:text-brand-400 transition-colors">info@offgridsystems.com</a></li>
+        </ul>
+        <div class="p-4 rounded-xl bg-surface-700 border border-white/6">
+          <div class="text-[10px] text-slate-600 font-bold tracking-widest uppercase mb-2.5" data-i18n="foot.certif">Certifications</div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">ISO 9001</span>
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">IEC 62109</span>
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">CE Marked</span>
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">UL Listed</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider mb-8" style="margin-left:0; margin-right:0;"></div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600">
+      <div data-i18n="foot.copy">© 2025 Off Grid Systems. All rights reserved. Built for energy independence.</div>
+      <div class="flex gap-5">
+        <a href="#" class="hover:text-brand-400 transition-colors" data-i18n="foot.privacy">Privacy Policy</a>
+        <a href="#" class="hover:text-brand-400 transition-colors" data-i18n="foot.terms">Terms of Service</a>
+        <a href="#" class="hover:text-brand-400 transition-colors" data-i18n="foot.cookie">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"
+  class="fixed bottom-6 right-6 w-12 h-12 rounded-xl btn-primary hidden z-50 items-center justify-center shadow-xl"
+  onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <span><i class="fas fa-chevron-up text-sm"></i></span>
+</button>
+
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

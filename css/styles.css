@@ -1,0 +1,477 @@
+/* ============================================================
+   styles.css — Off Grid Systems
+   Custom styles layered on top of Tailwind CSS utility classes.
+   Sections: Reset · Scrollbar · Navbar · Typography · Hero ·
+             Cards · Buttons · Forms · Animations · Components ·
+             Light Theme Overrides
+   ============================================================ */
+
+
+/* ---- Reset ------------------------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #09090f;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+.font-heading { font-family: 'Rajdhani', sans-serif; }
+
+
+/* ---- Custom scrollbar (WebKit browsers only) -------------------------- */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #09090f; }
+::-webkit-scrollbar-thumb { background: #d97706; border-radius: 4px; }
+
+
+/* ---- Navbar ----------------------------------------------------------- */
+/* Transparent by default; gains frosted-glass look once the user scrolls */
+#navbar { transition: background 0.4s ease, border-color 0.4s ease; }
+#navbar.scrolled {
+  background: rgba(9,9,15,0.92) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(245,158,11,0.18);
+}
+
+
+/* ---- Gradient text (amber shine used in section headings) ------------- */
+.gradient-text {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #fde68a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Gradient border via pseudo-element mask trick -------------------- */
+.gradient-border { position: relative; }
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  /* XOR mask makes only the 1 px padding visible, not the interior */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+
+/* ---- Hero section ----------------------------------------------------- */
+/* Full-screen background image with a dark gradient overlay on top */
+.hero-bg {
+  background-image:
+    linear-gradient(to bottom, rgba(9,9,15,0.65) 0%, rgba(9,9,15,0.35) 40%, rgba(9,9,15,0.88) 100%),
+    url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&w=1920&q=80');
+  background-size: cover;
+  background-position: center 40%;
+}
+
+/* ---- Subtle amber grid used as decorative section backgrounds ---------- */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(245,158,11,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,158,11,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+
+/* ---- Cards ------------------------------------------------------------ */
+/* Base dark-glass panel; lifts on hover with an amber glow */
+.card {
+  background: rgba(17,17,24,0.8);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245,158,11,0.35);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(245,158,11,0.08);
+}
+
+
+/* ---- Buttons ---------------------------------------------------------- */
+/* Primary CTA: amber gradient with a lighter shimmer revealed on hover */
+.btn-primary {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  color: #000;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+/* Brighter gradient layer that fades in on hover */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.btn-primary:hover::after { opacity: 1; }
+.btn-primary:hover { box-shadow: 0 8px 30px rgba(245,158,11,0.4); transform: translateY(-2px); }
+/* z-index keeps text/icons above the ::after overlay */
+.btn-primary span { position: relative; z-index: 1; }
+
+/* Ghost / outline secondary button */
+.btn-outline {
+  border: 1.5px solid rgba(245,158,11,0.45);
+  color: #f59e0b;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: rgba(245,158,11,0.1);
+  border-color: #f59e0b;
+  box-shadow: 0 0 20px rgba(245,158,11,0.15);
+}
+
+
+/* ---- Stat badges (hero & metrics row) --------------------------------- */
+.stat-badge {
+  background: linear-gradient(135deg, rgba(245,158,11,0.1) 0%, rgba(245,158,11,0.03) 100%);
+  border: 1px solid rgba(245,158,11,0.22);
+}
+
+
+/* ---- Form inputs ------------------------------------------------------ */
+.f-input {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.09);
+  color: #e2e8f0;
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  outline: none;
+}
+.f-input::placeholder { color: rgba(255,255,255,0.3); }
+.f-input:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245,158,11,0.14);
+  background: rgba(255,255,255,0.07);
+}
+select.f-input { cursor: pointer; }
+select.f-input option    { background: #18181f; color: #e2e8f0; }
+select.f-input optgroup  { color: rgba(245,158,11,0.7); font-size: 0.75rem; }
+
+
+/* ---- Section divider (horizontal gradient line) ----------------------- */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(245,158,11,0.3), transparent);
+  margin: 0 2rem;
+}
+
+/* ---- Section badge pill (appears above each section heading) ---------- */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(245,158,11,0.08);
+  border: 1px solid rgba(245,158,11,0.28);
+  border-radius: 9999px;
+  padding: 0.35rem 1rem;
+  color: #f59e0b;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---- Benefit icon container (inside why-us cards) --------------------- */
+.benefit-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(245,158,11,0.18), rgba(245,158,11,0.04));
+  border: 1px solid rgba(245,158,11,0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #f59e0b;
+  transition: all 0.3s ease;
+  margin-bottom: 1.1rem;
+}
+/* Icon bounces and glows when the parent card is hovered */
+.benefit-card:hover .benefit-icon {
+  background: linear-gradient(135deg, rgba(245,158,11,0.28), rgba(245,158,11,0.1));
+  box-shadow: 0 0 24px rgba(245,158,11,0.22);
+  transform: scale(1.08) rotate(-3deg);
+}
+
+/* ---- Project portfolio cards (image + overlay text) ------------------- */
+.proj-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  height: 360px;
+  transition: border-color 0.3s;
+}
+.proj-card:hover { border-color: rgba(245,158,11,0.35); }
+.proj-card .proj-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.proj-card:hover .proj-img { transform: scale(1.06); }
+/* Dark gradient fades the image toward the bottom so text stays readable */
+.proj-card .proj-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(9,9,15,0.97) 0%, rgba(9,9,15,0.5) 55%, rgba(9,9,15,0.15) 100%);
+  transition: background 0.3s;
+}
+.proj-card:hover .proj-overlay {
+  background: linear-gradient(to top, rgba(9,9,15,0.98) 0%, rgba(9,9,15,0.7) 55%, rgba(245,158,11,0.08) 100%);
+}
+.proj-card .proj-content {
+  position: absolute;
+  inset: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ---- Spec progress bar inside solution cards -------------------------- */
+.spec-track {
+  height: 3px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.spec-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #d97706, #fbbf24);
+  border-radius: 2px;
+}
+
+
+/* ---- Scroll-triggered fade-in animation ------------------------------- */
+/* Elements start invisible and shifted down 24 px.
+   JS adds .in when they enter the viewport, triggering the CSS transition. */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.in          { opacity: 1; transform: translateY(0); }
+.reveal-delay-1     { transition-delay: 0.1s; }
+.reveal-delay-2     { transition-delay: 0.2s; }
+.reveal-delay-3     { transition-delay: 0.3s; }
+.reveal-delay-4     { transition-delay: 0.4s; }
+
+
+/* ---- Partner / brand logos in trust bar ------------------------------- */
+.partner {
+  opacity: 0.45;
+  transition: opacity 0.3s, filter 0.3s;
+  filter: grayscale(100%) brightness(1.2);
+}
+.partner:hover { opacity: 1; filter: grayscale(0%) brightness(1); }
+
+
+/* ---- Desktop nav links with animated underline ------------------------ */
+.nav-link {
+  position: relative;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+/* Underline grows from the center on hover / active state */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: #f59e0b;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+.nav-link:hover,
+.nav-link.active            { color: #f59e0b; }
+.nav-link:hover::after,
+.nav-link.active::after     { transform: scaleX(1); }
+
+
+/* ---- Mobile menu slide-down transition -------------------------------- */
+/* max-height animation is used because "height: auto" can't be transitioned */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+#mobile-menu.open { max-height: 480px; }
+
+
+/* ---- Decorative spinning rings in hero section ------------------------ */
+.glow-ring {
+  border-radius: 50%;
+  border: 1px solid rgba(245,158,11,0.2);
+  animation: spin 18s linear infinite;
+}
+.glow-ring-inner {
+  border-radius: 50%;
+  border: 1px dashed rgba(245,158,11,0.12);
+  animation: spin 12s linear infinite reverse;
+}
+
+
+/* ---- System flow diagram (About section) ------------------------------ */
+.flow-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: border-color 0.3s, background 0.3s;
+}
+.flow-item:hover {
+  background: rgba(245,158,11,0.06);
+  border-color: rgba(245,158,11,0.25);
+}
+.flow-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(245,158,11,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f59e0b;
+  flex-shrink: 0;
+}
+
+
+/* ---- Language switcher dropdown --------------------------------------- */
+#lang-menu {
+  background: rgba(17,17,24,0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+
+/* Dark mode: slate-600 (#475569) has only ~2.9:1 contrast on #09090f — boost it */
+.text-slate-600 { color: #94a3b8 !important; }
+
+
+/* ============================================================
+   LIGHT THEME OVERRIDES
+   Applied when JS sets <html class="light"> via toggleTheme().
+   Each rule re-declares the same property with a light-mode value.
+   ============================================================ */
+
+html.light body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+html.light ::-webkit-scrollbar-track { background: #f1f5f9; }
+html.light ::-webkit-scrollbar-thumb { background: #d97706; }
+
+html.light #navbar.scrolled {
+  background: rgba(248,250,252,0.95) !important;
+  border-bottom-color: rgba(245,158,11,0.25);
+}
+
+html.light .hero-bg {
+  background-image:
+    linear-gradient(to bottom, rgba(15,23,42,0.6) 0%, rgba(15,23,42,0.3) 40%, rgba(15,23,42,0.85) 100%),
+    url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&w=1920&q=80');
+}
+
+html.light .card {
+  background: rgba(255,255,255,0.97);
+  border-color: rgba(0,0,0,0.08);
+}
+html.light .card:hover {
+  border-color: rgba(245,158,11,0.5);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 0 40px rgba(245,158,11,0.1);
+}
+
+html.light .stat-badge {
+  background: linear-gradient(135deg, rgba(245,158,11,0.14) 0%, rgba(245,158,11,0.05) 100%);
+  border-color: rgba(245,158,11,0.35);
+}
+
+html.light .f-input {
+  background: rgba(255,255,255,0.9);
+  border-color: rgba(0,0,0,0.14);
+  color: #1e293b;
+}
+html.light .f-input::placeholder { color: rgba(0,0,0,0.35); }
+html.light .f-input:focus {
+  background: #fff;
+  border-color: #f59e0b;
+}
+html.light select.f-input option { background: #f8fafc; color: #1e293b; }
+
+html.light .flow-item {
+  background: rgba(0,0,0,0.03);
+  border-color: rgba(0,0,0,0.09);
+}
+html.light .flow-item:hover {
+  background: rgba(245,158,11,0.07);
+  border-color: rgba(245,158,11,0.3);
+}
+
+html.light .nav-link { color: #475569; }
+html.light .nav-link:hover,
+html.light .nav-link.active { color: #d97706; }
+
+html.light .partner { filter: grayscale(100%) brightness(0.5); }
+html.light .partner:hover { filter: grayscale(0%) brightness(0.7); }
+
+/* Override Tailwind text-color utilities in light mode */
+html.light .text-white    { color: #1e293b !important; }
+html.light .text-slate-300 { color: #334155 !important; }
+html.light .text-slate-400 { color: #475569 !important; }
+html.light .text-slate-500 { color: #475569 !important; }
+html.light .text-slate-600 { color: #64748b !important; }
+
+/* Override Tailwind surface/background utilities in light mode */
+html.light .bg-surface-900          { background-color: #f8fafc !important; }
+html.light footer.bg-surface-900    { background-color: #f1f5f9 !important; }
+html.light .bg-surface-700          { background-color: #e2e8f0 !important; }
+html.light .bg-surface-600          { background-color: #cbd5e1 !important; }
+
+html.light .border-white\/5,
+html.light .border-white\/6,
+html.light .border-white\/8         { border-color: rgba(0,0,0,0.09) !important; }
+html.light .border-slate-800        { border-color: rgba(0,0,0,0.1)  !important; }
+
+html.light .benefit-card.card       { background: rgba(255,255,255,0.97); }
+html.light .proj-card               { border-color: rgba(0,0,0,0.09); }
+
+/* Language menu in light mode */
+html.light #lang-menu               { background: rgba(248,250,252,0.98); border-color: rgba(0,0,0,0.1); }
+html.light #lang-menu .lang-opt     { color: #475569; }
+html.light #lang-menu .lang-opt:hover { color: #d97706; background: rgba(245,158,11,0.07); }
+html.light #lang-btn                { color: #475569; border-color: rgba(0,0,0,0.12); }
+html.light #lang-btn:hover          { color: #d97706; }
+html.light #theme-toggle            { color: #475569; border-color: rgba(0,0,0,0.12); }
+html.light #theme-toggle:hover      { color: #d97706; }
+
+/* Mobile menu in light mode */
+html.light #mobile-menu             { background: #f8fafc; }
+html.light .mobile-link             { color: #334155 !important; }
+html.light .mobile-link:hover       { color: #d97706 !important; }

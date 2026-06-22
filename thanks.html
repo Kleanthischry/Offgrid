@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Thank You | Off Grid Systems</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .font-heading { font-family: 'Rajdhani', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-surface-900">
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4 lg:py-5">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+        <img src="logo.png" alt="Off Grid Power Systems" class="h-12 w-auto"
+             onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';" />
+        <div id="logo-fallback" class="items-center gap-3" style="display:none;">
+          <div class="relative w-10 h-10 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg,#d97706,#f59e0b);">
+            <i class="fas fa-solar-panel text-black text-base"></i>
+            <span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-brand-400 border-2 border-surface-900 animate-pulse"></span>
+          </div>
+          <div class="leading-none">
+            <span class="font-heading text-[1.2rem] font-bold text-white tracking-widest">OFF GRID</span>
+            <span class="font-heading text-[1.2rem] font-bold text-brand-500 tracking-widest"> SYSTEMS</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"     class="nav-link">Home</a>
+        <a href="solutions.html" class="nav-link">Solutions</a>
+        <a href="projects.html"  class="nav-link">Projects</a>
+        <a href="about.html"     class="nav-link">About</a>
+        <a href="contact.html"   class="nav-link">Contact</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+          class="w-9 h-9 rounded-xl border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
+          <i class="fas fa-moon text-sm" id="theme-icon"></i>
+        </button>
+        <a href="tel:+15551234567" class="text-slate-400 hover:text-brand-400 text-sm transition-colors">
+          <i class="fas fa-phone-flip mr-1.5 text-brand-500"></i>+1 (555) 123-4567
+        </a>
+      </div>
+
+      <button id="hamburger" class="lg:hidden text-slate-400 hover:text-brand-400 transition-colors w-10 h-10 flex items-center justify-center" aria-label="Toggle menu">
+        <i class="fas fa-bars text-xl" id="hamburger-icon"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" aria-hidden="true">
+      <div class="pt-4 pb-5 border-t border-slate-800 mt-4 flex flex-col gap-1">
+        <a href="index.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Home</a>
+        <a href="solutions.html" class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Solutions</a>
+        <a href="projects.html"  class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Projects</a>
+        <a href="about.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">About</a>
+        <a href="contact.html"   class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Contact</a>
+        <div class="flex items-center gap-3 mt-3 px-3">
+          <button onclick="toggleTheme()" class="w-9 h-9 rounded-lg border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
+            <i class="fas fa-moon text-sm" id="mob-theme-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     THANK YOU
+═══════════════════════════════════════════════ -->
+<section class="min-h-screen flex items-center relative overflow-hidden">
+  <div class="absolute inset-0 hero-bg"></div>
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(245,158,11,0.06) 0%, transparent 65%);"></div>
+
+  <div class="max-w-2xl mx-auto px-5 lg:px-8 pt-28 lg:pt-32 pb-10 relative z-10 text-center">
+
+    <!-- Icon -->
+    <div class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8" style="background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.05)); border: 1px solid rgba(245,158,11,0.4);">
+      <i class="fas fa-check text-brand-400 text-4xl"></i>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="font-heading font-bold text-white mb-4" style="font-size: clamp(2.2rem,6vw,3.8rem);">
+      THANK YOU FOR <span class="gradient-text">REACHING OUT</span>
+    </h1>
+
+    <!-- Message -->
+    <p class="text-slate-300 text-lg leading-relaxed mb-4 bg-black/40 backdrop-blur-sm rounded-xl px-5 py-4">
+      Your quote request has been received. One of our engineers will review your project details and give you a call during working hours.
+    </p>
+
+    <p class="text-slate-500 text-sm mb-10">
+      <i class="fas fa-clock text-brand-500/60 mr-2"></i>Mon – Fri, 8 am – 6 pm EST &nbsp;·&nbsp; Typical response: under 4 hours
+    </p>
+
+    <!-- What happens next -->
+    <div class="rounded-2xl p-6 mb-10 text-left" style="background: linear-gradient(145deg, rgba(245,158,11,0.07), rgba(17,17,24,0.8)); border: 1px solid rgba(245,158,11,0.2);">
+      <h4 class="font-heading text-[11px] font-bold text-brand-400 tracking-widest uppercase mb-5">What Happens Next</h4>
+      <div class="space-y-4">
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full flex items-center justify-center text-black text-xs font-bold flex-shrink-0 mt-0.5" style="background: #f59e0b;">1</div>
+          <p class="text-slate-400 text-sm">Our team reviews your project details and energy requirements</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5" style="background: rgba(245,158,11,0.45);">2</div>
+          <p class="text-slate-400 text-sm">A certified engineer calls you during working hours to discuss your needs</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5" style="background: rgba(245,158,11,0.22);">3</div>
+          <p class="text-slate-400 text-sm">You receive a custom system design and detailed quote — completely free</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="index.html" class="btn-primary px-8 py-3.5 rounded-xl text-sm flex items-center gap-2.5">
+        <i class="fas fa-house text-sm relative z-10"></i>
+        Back to Home
+      </a>
+      <a href="solutions.html" class="btn-outline px-8 py-3.5 rounded-xl text-sm flex items-center gap-2.5">
+        <i class="fas fa-solar-panel text-sm"></i>
+        Explore Solutions
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Off Grid Systems — About us, our story, why choose us, and what our clients say. Engineering energy freedom since 2010." />
+  <meta name="keywords" content="off-grid solar company, solar energy engineers, why choose off grid systems, solar testimonials" />
+  <meta name="author" content="Off Grid Systems" />
+  <meta property="og:type" content="website" />
+  <title>About | Off Grid Systems</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .font-heading { font-family: 'Rajdhani', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-surface-900">
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4 lg:py-5">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+        <img src="logo.png" alt="Off Grid Power Systems" class="h-12 w-auto"
+             onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';" />
+        <div id="logo-fallback" class="items-center gap-3" style="display:none;">
+          <div class="relative w-10 h-10 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg,#d97706,#f59e0b);">
+            <i class="fas fa-solar-panel text-black text-base"></i>
+            <span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-brand-400 border-2 border-surface-900 animate-pulse"></span>
+          </div>
+          <div class="leading-none">
+            <span class="font-heading text-[1.2rem] font-bold text-white tracking-widest">OFF GRID</span>
+            <span class="font-heading text-[1.2rem] font-bold text-brand-500 tracking-widest"> SYSTEMS</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"     class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="nav-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="projects.html"  class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="about.html"     class="nav-link" data-i18n="nav.about">About</a>
+        <a href="contact.html"   class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <div class="relative" id="lang-switcher">
+          <button id="lang-btn" onclick="toggleLangMenu()"
+            class="flex items-center gap-1.5 text-slate-400 hover:text-brand-400 text-xs font-bold tracking-wider transition-colors border border-white/10 hover:border-brand-500/30 rounded-lg px-3 py-2">
+            <span id="lang-flag">🇺🇸</span>
+            <span id="lang-code">EN</span>
+            <i class="fas fa-chevron-down text-[9px] transition-transform duration-200" id="lang-chevron"></i>
+          </button>
+          <div id="lang-menu" class="hidden absolute top-full right-0 mt-1.5 rounded-xl border border-white/10 py-1.5 w-36 z-50 shadow-xl">
+            <button onclick="setLang('en')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇺🇸 <span>English</span></button>
+            <button onclick="setLang('ru')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇷🇺 <span>Русский</span></button>
+            <button onclick="setLang('el')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇬🇷 <span>Ελληνικά</span></button>
+          </div>
+        </div>
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+          class="w-9 h-9 rounded-xl border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
+          <i class="fas fa-moon text-sm" id="theme-icon"></i>
+        </button>
+        <a href="tel:+15551234567" class="text-slate-400 hover:text-brand-400 text-sm transition-colors">
+          <i class="fas fa-phone-flip mr-1.5 text-brand-500"></i>+1 (555) 123-4567
+        </a>
+        <a href="contact.html" class="btn-primary px-6 py-2.5 rounded-xl text-sm tracking-wide">
+          <span data-i18n="nav.get-quote">GET A QUOTE</span>
+        </a>
+      </div>
+
+      <button id="hamburger" class="lg:hidden text-slate-400 hover:text-brand-400 transition-colors w-10 h-10 flex items-center justify-center" aria-label="Toggle menu">
+        <i class="fas fa-bars text-xl" id="hamburger-icon"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" aria-hidden="true">
+      <div class="pt-4 pb-5 border-t border-slate-800 mt-4 flex flex-col gap-1">
+        <a href="index.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.solutions">Solutions</a>
+        <a href="projects.html"  class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.projects">Projects</a>
+        <a href="about.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.about">About</a>
+        <a href="contact.html"   class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.contact">Contact</a>
+        <a href="contact.html"   class="mobile-link btn-primary mt-2 px-6 py-3 rounded-xl text-sm tracking-wide text-center"><span data-i18n="nav.get-free-quote">GET A FREE QUOTE</span></a>
+        <div class="flex items-center gap-3 mt-3 px-3">
+          <button onclick="setLang('en')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-en">🇺🇸 EN</button>
+          <button onclick="setLang('ru')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-ru">🇷🇺 RU</button>
+          <button onclick="setLang('el')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-el">🇬🇷 EL</button>
+          <button onclick="toggleTheme()" class="w-9 h-9 rounded-lg border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
+            <i class="fas fa-moon text-sm" id="mob-theme-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE HERO
+═══════════════════════════════════════════════ -->
+<section class="pt-40 pb-20 relative overflow-hidden">
+  <div class="absolute inset-0 hero-bg"></div>
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10 text-center">
+    <div class="section-badge mb-6 reveal"><i class="fas fa-building text-xs"></i> <span data-i18n="about.badge">Our Story</span></div>
+    <h1 class="font-heading font-bold text-white mb-4 reveal reveal-delay-1" style="font-size: clamp(2.5rem,6vw,4.5rem);">
+      <span data-i18n="about.title1">ENGINEERING</span> <span class="gradient-text" data-i18n="about.title2">ENERGY FREEDOM</span>
+    </h1>
+    <p class="text-slate-400 text-lg max-w-2xl mx-auto reveal reveal-delay-2" data-i18n="about.hero.sub">
+      Since 2010, we've deployed autonomous solar systems across the planet's most remote and demanding environments.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     ABOUT US — STORY + SYSTEM DIAGRAM
+═══════════════════════════════════════════════ -->
+<section id="about" class="py-20 relative overflow-hidden">
+  <div class="absolute -right-48 top-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full pointer-events-none opacity-[0.04]" style="background: radial-gradient(circle, #f59e0b 0%, transparent 70%);"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: story -->
+      <div class="reveal">
+        <p class="text-slate-400 leading-relaxed mb-5" data-i18n="about.p1">
+          Off Grid Systems was founded by a team of renewable energy engineers who believed that reliable, clean power shouldn't require proximity to a utility grid. We've spent over a decade designing and deploying autonomous solar PV systems across the planet's most remote and demanding environments.
+        </p>
+        <p class="text-slate-400 leading-relaxed mb-10" data-i18n="about.p2">
+          From alpine chalets in the Swiss Alps to agricultural estates in the Australian outback, from Saharan telecom towers to Pacific island eco-resorts — we've proven that with the right engineering, solar energy can power anything, anywhere, anytime.
+        </p>
+
+        <div class="space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fas fa-award text-brand-400 text-sm"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-sm mb-1" data-i18n="about.feat1.title">Tier-1 Components Only</h4>
+              <p class="text-slate-400 text-sm" data-i18n="about.feat1.desc">We specify only certified tier-1 panels, factory-authorised inverters, and proven lithium battery solutions from the world's leading manufacturers.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fas fa-wrench text-brand-400 text-sm"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-sm mb-1" data-i18n="about.feat2.title">Full Turnkey Delivery</h4>
+              <p class="text-slate-400 text-sm" data-i18n="about.feat2.desc">Site survey, energy analysis, custom system design, procurement, installation, commissioning, and long-term O&amp;M — we own the whole process.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <i class="fas fa-globe text-brand-400 text-sm"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-sm mb-1" data-i18n="about.feat3.title">Global Reach, Local Expertise</h4>
+              <p class="text-slate-400 text-sm" data-i18n="about.feat3.desc">Our certified partner network operates in 40+ countries, adapting every design to local climate, regulation, and grid interconnection standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: system diagram -->
+      <div class="reveal reveal-delay-2">
+        <div class="rounded-2xl border border-white/8 p-7" style="background: linear-gradient(145deg, rgba(245,158,11,0.05) 0%, rgba(17,17,24,0.9) 100%);">
+          <div class="flex items-center gap-4 mb-6 pb-5 border-b border-white/6">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center relative flex-shrink-0" style="background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.05)); border: 1px solid rgba(245,158,11,0.3);">
+              <i class="fas fa-sun text-brand-400 text-2xl"></i>
+              <span class="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-brand-500 flex items-center justify-center">
+                <i class="fas fa-bolt text-black text-[8px]"></i>
+              </span>
+            </div>
+            <div>
+              <div class="text-white font-heading text-lg font-bold" data-i18n="about.diag.title">Complete System Architecture</div>
+              <div class="text-slate-500 text-xs mt-0.5" data-i18n="about.diag.sub">How your autonomous solar system works</div>
+            </div>
+          </div>
+
+          <div class="space-y-2.5">
+            <div class="flow-item">
+              <div class="flow-icon"><i class="fas fa-solar-panel text-sm"></i></div>
+              <div class="flex-1">
+                <div class="text-white text-sm font-semibold" data-i18n="about.flow1.title">Solar PV Array</div>
+                <div class="text-slate-500 text-xs" data-i18n="about.flow1.sub">Tier-1 monocrystalline / bifacial panels</div>
+              </div>
+              <i class="fas fa-chevron-down text-brand-500/50 text-xs"></i>
+            </div>
+            <div class="flow-item">
+              <div class="flow-icon"><i class="fas fa-microchip text-sm"></i></div>
+              <div class="flex-1">
+                <div class="text-white text-sm font-semibold" data-i18n="about.flow2.title">MPPT Charge Controller</div>
+                <div class="text-slate-500 text-xs" data-i18n="about.flow2.sub">Maximum power point tracking</div>
+              </div>
+              <i class="fas fa-chevron-down text-brand-500/50 text-xs"></i>
+            </div>
+            <div class="flow-item">
+              <div class="flow-icon"><i class="fas fa-battery-full text-sm"></i></div>
+              <div class="flex-1">
+                <div class="text-white text-sm font-semibold" data-i18n="about.flow3.title">Lithium Battery Bank</div>
+                <div class="text-slate-500 text-xs" data-i18n="about.flow3.sub">LiFePO₄ deep-cycle storage with BMS</div>
+              </div>
+              <i class="fas fa-chevron-down text-brand-500/50 text-xs"></i>
+            </div>
+            <div class="flow-item">
+              <div class="flow-icon"><i class="fas fa-plug text-sm"></i></div>
+              <div class="flex-1">
+                <div class="text-white text-sm font-semibold" data-i18n="about.flow4.title">Hybrid Inverter / Charger</div>
+                <div class="text-slate-500 text-xs" data-i18n="about.flow4.sub">DC → AC conversion + grid-forming</div>
+              </div>
+              <i class="fas fa-chevron-down text-brand-500/50 text-xs"></i>
+            </div>
+            <div class="flow-item" style="background: rgba(245,158,11,0.07); border-color: rgba(245,158,11,0.3);">
+              <div class="flow-icon" style="background: rgba(245,158,11,0.2);"><i class="fas fa-home text-sm"></i></div>
+              <div class="flex-1">
+                <div class="text-white text-sm font-semibold" data-i18n="about.flow5.title">Your Loads</div>
+                <div class="text-slate-500 text-xs" data-i18n="about.flow5.sub">Clean, stable, reliable off-grid power</div>
+              </div>
+              <span class="text-green-400 text-[10px] font-bold bg-green-500/10 border border-green-500/20 px-2 py-0.5 rounded-full">✓ ON</span>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-5 border-t border-white/6 flex items-center justify-between">
+            <div class="text-slate-500 text-[10px] font-semibold tracking-widest uppercase" data-i18n="about.auth">Authorised by</div>
+            <div class="flex gap-2">
+              <span class="text-[10px] bg-surface-600 text-slate-400 px-2.5 py-1 rounded border border-white/8">Victron</span>
+              <span class="text-[10px] bg-surface-600 text-slate-400 px-2.5 py-1 rounded border border-white/8">SMA</span>
+              <span class="text-[10px] bg-surface-600 text-slate-400 px-2.5 py-1 rounded border border-white/8">Fronius</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 flex items-center gap-4">
+          <div class="flex-1 p-3.5 rounded-xl bg-surface-700 border border-white/6 flex items-center gap-3">
+            <i class="fas fa-certificate text-brand-400"></i>
+            <div>
+              <div class="text-white text-xs font-bold" data-i18n="about.iso.title">ISO 9001 Certified</div>
+              <div class="text-slate-500 text-[10px]" data-i18n="about.iso.sub">Quality Management System</div>
+            </div>
+          </div>
+          <div class="flex-1 p-3.5 rounded-xl bg-surface-700 border border-white/6 flex items-center gap-3">
+            <i class="fas fa-earth-americas text-brand-400"></i>
+            <div>
+              <div class="text-white text-xs font-bold" data-i18n="about.ce.title">CE &amp; UL Listed</div>
+              <div class="text-slate-500 text-[10px]" data-i18n="about.ce.sub">International certifications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<!-- ═══════════════════════════════════════════════
+     WHY CHOOSE US
+═══════════════════════════════════════════════ -->
+<section id="why-us" class="py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge mb-6"><i class="fas fa-star text-xs"></i> <span data-i18n="why.badge">Why Choose Us</span></div>
+      <h2 class="font-heading font-bold text-white mb-4" style="font-size: clamp(2rem,5vw,3.2rem);">
+        <span data-i18n="why.title1">THE OFF GRID</span> <span class="gradient-text" data-i18n="why.title2">ADVANTAGE</span>
+      </h2>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto" data-i18n="why.sub">
+        We don't just sell solar panels. We engineer complete energy autonomy — backed by real-world experience, premium components, and lifetime support.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
+
+      <div class="benefit-card card rounded-2xl p-7 reveal reveal-delay-1">
+        <div class="benefit-icon"><i class="fas fa-plug-circle-bolt"></i></div>
+        <h3 class="font-heading text-xl font-bold text-white mb-2" data-i18n="b1.title">True Energy Independence</h3>
+        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="b1.desc">Cut the grid permanently. Generate, store, and manage your own clean solar power with zero monthly utility bills or blackout risk.</p>
+      </div>
+
+      <div class="benefit-card card rounded-2xl p-7 reveal reveal-delay-2">
+        <div class="benefit-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3 class="font-heading text-xl font-bold text-white mb-2" data-i18n="b2.title">7-Year Full Warranty</h3>
+        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="b2.desc">Industry-leading 7-year comprehensive warranty covering all components — panels, batteries, inverters, wiring, and installation workmanship.</p>
+      </div>
+
+      <div class="benefit-card card rounded-2xl p-7 reveal reveal-delay-3">
+        <div class="benefit-icon"><i class="fas fa-signal"></i></div>
+        <h3 class="font-heading text-xl font-bold text-white mb-2" data-i18n="b3.title">99.9% System Uptime</h3>
+        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="b3.desc">Redundant architecture and smart load management keeps your power on through cloudy days, nights, and seasonal variations.</p>
+      </div>
+
+      <div class="benefit-card card rounded-2xl p-7 reveal reveal-delay-1">
+        <div class="benefit-icon"><i class="fas fa-mobile-screen-button"></i></div>
+        <h3 class="font-heading text-xl font-bold text-white mb-2" data-i18n="b4.title">Smart Remote Monitoring</h3>
+        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="b4.desc">Real-time system telemetry from your smartphone. Track energy production, consumption, battery SOC, and receive alerts anywhere in the world.</p>
+      </div>
+
+      <div class="benefit-card card rounded-2xl p-7 reveal reveal-delay-2">
+        <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
+        <h3 class="font-heading text-xl font-bold text-white mb-2" data-i18n="b5.title">100% Clean Energy</h3>
+        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="b5.desc">Zero emissions, zero noise, zero fuel costs. Drastically reduce your carbon footprint while achieving complete self-sufficiency.</p>
+      </div>
+
+      <div class="benefit-card card rounded-2xl p-7 reveal reveal-delay-3">
+        <div class="benefit-icon"><i class="fas fa-headset"></i></div>
+        <h3 class="font-heading text-xl font-bold text-white mb-2" data-i18n="b6.title">Lifetime Technical Support</h3>
+        <p class="text-slate-400 text-sm leading-relaxed" data-i18n="b6.desc">Certified engineers available 24/7 for remote diagnostics, software updates, and emergency on-site service — worldwide coverage.</p>
+      </div>
+
+    </div>
+
+    <!-- Key metrics -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+      <div class="stat-badge rounded-2xl p-6 text-center">
+        <div class="font-heading text-4xl font-bold gradient-text mb-1.5 counter" data-target="500" data-suffix="+">0+</div>
+        <div class="text-slate-400 text-sm font-medium" data-i18n="metrics.s1.main">Systems Installed</div>
+        <div class="text-slate-600 text-xs mt-0.5" data-i18n="metrics.s1.sub">Across 40+ Countries</div>
+      </div>
+      <div class="stat-badge rounded-2xl p-6 text-center">
+        <div class="font-heading text-4xl font-bold gradient-text mb-1.5 counter" data-target="12" data-suffix=" MW">0 MW</div>
+        <div class="text-slate-400 text-sm font-medium" data-i18n="metrics.s2.main">Total Capacity</div>
+        <div class="text-slate-600 text-xs mt-0.5" data-i18n="metrics.s2.sub">Deployed &amp; Operating</div>
+      </div>
+      <div class="stat-badge rounded-2xl p-6 text-center">
+        <div class="font-heading text-4xl font-bold gradient-text mb-1.5 counter" data-target="25" data-suffix=" YR">0 YR</div>
+        <div class="text-slate-400 text-sm font-medium" data-i18n="metrics.s3.main">Panel Performance</div>
+        <div class="text-slate-600 text-xs mt-0.5" data-i18n="metrics.s3.sub">Guaranteed Output</div>
+      </div>
+      <div class="stat-badge rounded-2xl p-6 text-center">
+        <div class="font-heading text-4xl font-bold gradient-text mb-1.5 counter" data-target="4.9" data-suffix="★" data-decimals="1">0★</div>
+        <div class="text-slate-400 text-sm font-medium" data-i18n="metrics.s4.main">Client Rating</div>
+        <div class="text-slate-600 text-xs mt-0.5" data-i18n="metrics.s4.sub">From 200+ Reviews</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<!-- ═══════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════ -->
+<section id="testimonials" class="py-28 relative overflow-hidden">
+  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse, rgba(245,158,11,0.04) 0%, transparent 70%);"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+    <div class="text-center mb-16 reveal">
+      <div class="section-badge mb-6"><i class="fas fa-quote-left text-xs"></i> <span data-i18n="rev.badge">Client Reviews</span></div>
+      <h2 class="font-heading font-bold text-white mb-4" style="font-size:clamp(2rem,5vw,3.2rem);">
+        <span data-i18n="rev.title1">WHAT OUR</span> <span class="gradient-text" data-i18n="rev.title2">CLIENTS SAY</span>
+      </h2>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto" data-i18n="rev.sub">
+        Real feedback from homeowners, farmers, and businesses who made the switch to autonomous solar power.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="card rounded-2xl p-7 reveal reveal-delay-1 flex flex-col">
+        <div class="flex gap-1 mb-5">
+          <i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i>
+        </div>
+        <blockquote class="text-slate-300 text-sm leading-relaxed mb-6 flex-1" data-i18n="rev1.quote">
+          "We've been 100% off-grid for 18 months now. Not a single outage. The Victron system Off Grid installed handles everything automatically — we don't even think about power anymore. Best investment we've ever made in the property."
+        </blockquote>
+        <div class="flex items-center gap-3 pt-5 border-t border-white/6">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-black font-bold text-sm flex-shrink-0" style="background: linear-gradient(135deg,#d97706,#fbbf24);">JM</div>
+          <div>
+            <div class="text-white text-sm font-semibold" data-i18n="rev1.name">James &amp; Maria Kowalski</div>
+            <div class="text-slate-500 text-xs" data-i18n="rev1.role">HomeBase Pro — Colorado, USA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2 rounded-2xl p-7 flex flex-col" style="background:linear-gradient(145deg,rgba(245,158,11,0.08),rgba(17,17,24,0.9)); border: 1px solid rgba(245,158,11,0.3);">
+        <div class="flex gap-1 mb-5">
+          <i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i>
+        </div>
+        <blockquote class="text-slate-300 text-sm leading-relaxed mb-6 flex-1" data-i18n="rev2.quote">
+          "We run a 400-acre property completely off-grid. The AgroGrid system powers our irrigation pumps, cold storage, workshop, and family home without a hiccup. The three-phase output was critical for us. Off Grid Systems delivered exactly what they promised."
+        </blockquote>
+        <div class="flex items-center gap-3 pt-5 border-t border-brand-500/20">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-black font-bold text-sm flex-shrink-0" style="background: linear-gradient(135deg,#d97706,#fbbf24);">TH</div>
+          <div>
+            <div class="text-white text-sm font-semibold" data-i18n="rev2.name">Tom Henderson</div>
+            <div class="text-slate-500 text-xs" data-i18n="rev2.role">AgroGrid Elite — Queensland, Australia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl p-7 reveal reveal-delay-3 flex flex-col">
+        <div class="flex gap-1 mb-5">
+          <i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i><i class="fas fa-star text-brand-400 text-sm"></i>
+        </div>
+        <blockquote class="text-slate-300 text-sm leading-relaxed mb-6 flex-1" data-i18n="rev3.quote">
+          "Our three telecom tower sites in Morocco had diesel running 24/7. Off Grid Systems replaced all of it with solar. Fuel costs dropped to zero and the SCADA integration means we see every watt in real time from our NOC in Paris. Incredible team."
+        </blockquote>
+        <div class="flex items-center gap-3 pt-5 border-t border-white/6">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center text-black font-bold text-sm flex-shrink-0" style="background: linear-gradient(135deg,#d97706,#fbbf24);">SB</div>
+          <div>
+            <div class="text-white text-sm font-semibold" data-i18n="rev3.name">Sophie Beaumont</div>
+            <div class="text-slate-500 text-xs" data-i18n="rev3.role">IndustrialCore — Telecom, Morocco</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Rating summary bar -->
+    <div class="mt-10 p-6 rounded-2xl reveal flex flex-col sm:flex-row items-center gap-6 sm:gap-10" style="background:rgba(17,17,24,0.7); border:1px solid rgba(255,255,255,0.06);">
+      <div class="text-center flex-shrink-0">
+        <div class="font-heading text-6xl font-bold gradient-text">4.9</div>
+        <div class="flex justify-center gap-1 mt-1 mb-1">
+          <i class="fas fa-star text-brand-400 text-base"></i><i class="fas fa-star text-brand-400 text-base"></i><i class="fas fa-star text-brand-400 text-base"></i><i class="fas fa-star text-brand-400 text-base"></i><i class="fas fa-star text-brand-400 text-base"></i>
+        </div>
+        <div class="text-slate-500 text-xs" data-i18n="rev.total">200+ verified reviews</div>
+      </div>
+      <div class="flex-1 w-full space-y-2.5">
+        <div class="flex items-center gap-3">
+          <span class="text-slate-400 text-xs w-12 text-right flex-shrink-0">5 ★</span>
+          <div class="flex-1 h-2 rounded-full bg-surface-600 overflow-hidden"><div class="h-full rounded-full" style="width:89%;background:linear-gradient(90deg,#d97706,#fbbf24);"></div></div>
+          <span class="text-slate-500 text-xs w-8 flex-shrink-0">89%</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-slate-400 text-xs w-12 text-right flex-shrink-0">4 ★</span>
+          <div class="flex-1 h-2 rounded-full bg-surface-600 overflow-hidden"><div class="h-full rounded-full" style="width:8%;background:linear-gradient(90deg,#d97706,#fbbf24);"></div></div>
+          <span class="text-slate-500 text-xs w-8 flex-shrink-0">8%</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-slate-400 text-xs w-12 text-right flex-shrink-0">3 ★</span>
+          <div class="flex-1 h-2 rounded-full bg-surface-600 overflow-hidden"><div class="h-full rounded-full" style="width:2%;background:linear-gradient(90deg,#d97706,#fbbf24);"></div></div>
+          <span class="text-slate-500 text-xs w-8 flex-shrink-0">2%</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-slate-400 text-xs w-12 text-right flex-shrink-0">1–2 ★</span>
+          <div class="flex-1 h-2 rounded-full bg-surface-600 overflow-hidden"><div class="h-full rounded-full" style="width:1%;background:linear-gradient(90deg,#d97706,#fbbf24);"></div></div>
+          <span class="text-slate-500 text-xs w-8 flex-shrink-0">1%</span>
+        </div>
+      </div>
+      <div class="flex-shrink-0 flex flex-col gap-3 items-center sm:items-start">
+        <div class="flex items-center gap-2 text-sm text-slate-400"><i class="fas fa-check-circle text-green-400 text-base"></i> <span data-i18n="rev.verified-google">Verified by Google</span></div>
+        <div class="flex items-center gap-2 text-sm text-slate-400"><i class="fas fa-check-circle text-green-400 text-base"></i> <span data-i18n="rev.verified-trustpilot">Verified by Trustpilot</span></div>
+        <div class="flex items-center gap-2 text-sm text-slate-400"><i class="fas fa-check-circle text-green-400 text-base"></i> <span data-i18n="rev.verified-clutch">Verified by Clutch</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CTA STRIP
+═══════════════════════════════════════════════ -->
+<section class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0" style="background: linear-gradient(135deg, #0f0a00 0%, #1a1000 40%, #0a0a0f 100%);"></div>
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(245,158,11,0.6),transparent);"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(245,158,11,0.6),transparent);"></div>
+  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(245,158,11,0.07) 0%, transparent 65%);"></div>
+
+  <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center relative z-10 reveal">
+    <h2 class="font-heading font-bold text-white mb-5 leading-tight" style="font-size:clamp(2rem,5vw,3.2rem);">
+      <span data-i18n="cta.title1">READY TO GO</span> <span class="gradient-text" data-i18n="cta.title2">OFF THE GRID?</span>
+    </h2>
+    <p class="text-slate-300 text-lg mb-10 max-w-2xl mx-auto leading-relaxed" data-i18n="cta.sub">
+      Join 500+ homes, farms, and businesses that have achieved complete energy independence. Our engineers will design your perfect system — at zero cost.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="contact.html" class="btn-primary px-10 py-4 rounded-xl text-base flex items-center gap-2.5">
+        <i class="fas fa-paper-plane text-sm relative z-10"></i>
+        <span data-i18n="cta.btn1">GET MY FREE QUOTE</span>
+      </a>
+      <a href="tel:+15551234567" class="btn-outline px-10 py-4 rounded-xl text-base flex items-center gap-2.5">
+        <i class="fas fa-phone text-sm"></i>
+        <span data-i18n="cta.btn2">CALL AN ENGINEER NOW</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="bg-surface-900 border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+
+      <div>
+        <a href="index.html" class="flex items-center gap-3 mb-5">
+          <img src="logo.png" alt="Off Grid Power Systems" class="h-14 w-auto"
+               onerror="this.style.display='none'; document.getElementById('foot-logo-fallback').style.display='flex';" />
+          <div id="foot-logo-fallback" class="items-center gap-3" style="display:none;">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg,#d97706,#f59e0b);">
+              <i class="fas fa-solar-panel text-black text-base"></i>
+            </div>
+            <div class="leading-none">
+              <span class="font-heading text-lg font-bold text-white tracking-widest">OFF GRID</span>
+              <span class="font-heading text-lg font-bold text-brand-500 tracking-widest"> SYSTEMS</span>
+            </div>
+          </div>
+        </a>
+        <p class="text-slate-500 text-sm leading-relaxed mb-6" data-i18n="foot.desc">Engineering energy independence through autonomous solar photovoltaic systems. Trusted by 500+ clients across 40 countries since 2010.</p>
+        <div class="flex gap-2.5">
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="#" aria-label="Twitter / X" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-x-twitter text-sm"></i></a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-instagram text-sm"></i></a>
+          <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-surface-600 hover:bg-brand-500/15 border border-white/6 hover:border-brand-500/35 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all"><i class="fab fa-youtube text-sm"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-heading text-[11px] font-bold text-white tracking-widest uppercase mb-5" data-i18n="foot.solutions">Solutions</h4>
+        <ul class="space-y-3">
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.homebase">HomeBase Pro (Residential)</a></li>
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.agrogrid">AgroGrid Elite (Farm)</a></li>
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.wildpower">WildPower Kit (Cabin)</a></li>
+          <li><a href="solutions.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.industrial">IndustrialCore (Commercial)</a></li>
+          <li><a href="contact.html"   class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.custom">Custom Engineering</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading text-[11px] font-bold text-white tracking-widest uppercase mb-5" data-i18n="foot.company">Company</h4>
+        <ul class="space-y-3">
+          <li><a href="about.html"    class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.about">About Us</a></li>
+          <li><a href="projects.html" class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.projects">Featured Projects</a></li>
+          <li><a href="about.html"    class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.why">Why Choose Us</a></li>
+          <li><a href="#"             class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.blog">Technical Blog</a></li>
+          <li><a href="#"             class="text-slate-500 hover:text-brand-400 text-sm transition-colors" data-i18n="foot.link.careers">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading text-[11px] font-bold text-white tracking-widest uppercase mb-5" data-i18n="foot.contact">Contact</h4>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-2 text-sm text-slate-500"><i class="fas fa-location-dot text-brand-500/60 text-xs mt-1 flex-shrink-0"></i>123 Solar Way, Denver, CO 80201, USA</li>
+          <li class="flex items-center gap-2 text-sm"><i class="fas fa-phone text-brand-500/60 text-xs flex-shrink-0"></i><a href="tel:+15551234567" class="text-slate-500 hover:text-brand-400 transition-colors">+1 (555) 123-4567</a></li>
+          <li class="flex items-center gap-2 text-sm"><i class="fas fa-envelope text-brand-500/60 text-xs flex-shrink-0"></i><a href="mailto:info@offgridsystems.com" class="text-slate-500 hover:text-brand-400 transition-colors">info@offgridsystems.com</a></li>
+        </ul>
+        <div class="p-4 rounded-xl bg-surface-700 border border-white/6">
+          <div class="text-[10px] text-slate-600 font-bold tracking-widest uppercase mb-2.5" data-i18n="foot.certif">Certifications</div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">ISO 9001</span>
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">IEC 62109</span>
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">CE Marked</span>
+            <span class="text-[10px] bg-surface-600 text-slate-400 px-2 py-1 rounded border border-white/8">UL Listed</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider mb-8" style="margin-left:0; margin-right:0;"></div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600">
+      <div data-i18n="foot.copy">© 2025 Off Grid Systems. All rights reserved. Built for energy independence.</div>
+      <div class="flex gap-5">
+        <a href="#" class="hover:text-brand-400 transition-colors" data-i18n="foot.privacy">Privacy Policy</a>
+        <a href="#" class="hover:text-brand-400 transition-colors" data-i18n="foot.terms">Terms of Service</a>
+        <a href="#" class="hover:text-brand-400 transition-colors" data-i18n="foot.cookie">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"
+  class="fixed bottom-6 right-6 w-12 h-12 rounded-xl btn-primary hidden z-50 items-center justify-center shadow-xl"
+  onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <span><i class="fas fa-chevron-up text-sm"></i></span>
+</button>
+
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
