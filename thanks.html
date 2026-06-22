@@ -41,14 +41,27 @@
       </a>
 
       <div class="hidden lg:flex items-center gap-8">
-        <a href="index.html"     class="nav-link">Home</a>
-        <a href="solutions.html" class="nav-link">Solutions</a>
-        <a href="projects.html"  class="nav-link">Projects</a>
-        <a href="about.html"     class="nav-link">About</a>
-        <a href="contact.html"   class="nav-link">Contact</a>
+        <a href="index.html"     class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="nav-link" data-i18n="nav.solutions">Solutions</a>
+        <a href="projects.html"  class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="about.html"     class="nav-link" data-i18n="nav.about">About</a>
+        <a href="contact.html"   class="nav-link" data-i18n="nav.contact">Contact</a>
       </div>
 
       <div class="hidden lg:flex items-center gap-3">
+        <div class="relative" id="lang-switcher">
+          <button id="lang-btn" onclick="toggleLangMenu()"
+            class="flex items-center gap-1.5 text-slate-400 hover:text-brand-400 text-xs font-bold tracking-wider transition-colors border border-white/10 hover:border-brand-500/30 rounded-lg px-3 py-2">
+            <span id="lang-flag">🇺🇸</span>
+            <span id="lang-code">EN</span>
+            <i class="fas fa-chevron-down text-[9px] transition-transform duration-200" id="lang-chevron"></i>
+          </button>
+          <div id="lang-menu" class="hidden absolute top-full right-0 mt-1.5 rounded-xl border border-white/10 py-1.5 w-36 z-50 shadow-xl">
+            <button onclick="setLang('en')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇺🇸 <span>English</span></button>
+            <button onclick="setLang('ru')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇷🇺 <span>Русский</span></button>
+            <button onclick="setLang('el')" class="lang-opt w-full flex items-center gap-2.5 px-4 py-2.5 text-sm text-slate-400 hover:text-brand-400 hover:bg-brand-500/5 transition-colors text-left">🇬🇷 <span>Ελληνικά</span></button>
+          </div>
+        </div>
         <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
           class="w-9 h-9 rounded-xl border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
           <i class="fas fa-moon text-sm" id="theme-icon"></i>
@@ -65,12 +78,15 @@
 
     <div id="mobile-menu" aria-hidden="true">
       <div class="pt-4 pb-5 border-t border-slate-800 mt-4 flex flex-col gap-1">
-        <a href="index.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Home</a>
-        <a href="solutions.html" class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Solutions</a>
-        <a href="projects.html"  class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Projects</a>
-        <a href="about.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">About</a>
-        <a href="contact.html"   class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all">Contact</a>
+        <a href="index.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.home">Home</a>
+        <a href="solutions.html" class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.solutions">Solutions</a>
+        <a href="projects.html"  class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.projects">Projects</a>
+        <a href="about.html"     class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.about">About</a>
+        <a href="contact.html"   class="mobile-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-brand-400 hover:bg-brand-500/8 text-sm font-semibold transition-all" data-i18n="nav.contact">Contact</a>
         <div class="flex items-center gap-3 mt-3 px-3">
+          <button onclick="setLang('en')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-en">🇺🇸 EN</button>
+          <button onclick="setLang('ru')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-ru">🇷🇺 RU</button>
+          <button onclick="setLang('el')" class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg border border-white/10 text-xs text-slate-400 hover:text-brand-400 hover:border-brand-500/30 transition-all" id="mob-lang-el">🇬🇷 EL</button>
           <button onclick="toggleTheme()" class="w-9 h-9 rounded-lg border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
             <i class="fas fa-moon text-sm" id="mob-theme-icon"></i>
           </button>
@@ -98,33 +114,33 @@
 
     <!-- Heading -->
     <h1 class="font-heading font-bold text-white mb-4" style="font-size: clamp(2.2rem,6vw,3.8rem);">
-      THANK YOU FOR <span class="gradient-text">REACHING OUT</span>
+      <span data-i18n="thanks.title1">THANK YOU FOR</span> <span class="gradient-text" data-i18n="thanks.title2">REACHING OUT</span>
     </h1>
 
     <!-- Message -->
-    <p class="text-slate-300 text-lg leading-relaxed mb-4 bg-black/40 backdrop-blur-sm rounded-xl px-5 py-4">
+    <p class="text-slate-300 text-lg leading-relaxed mb-4 bg-black/40 backdrop-blur-sm rounded-xl px-5 py-4" data-i18n="thanks.message">
       Your quote request has been received. One of our engineers will review your project details and give you a call during working hours.
     </p>
 
     <p class="text-slate-500 text-sm mb-10">
-      <i class="fas fa-clock text-brand-500/60 mr-2"></i>Mon – Fri, 8 am – 6 pm EST &nbsp;·&nbsp; Typical response: under 4 hours
+      <i class="fas fa-clock text-brand-500/60 mr-2"></i><span data-i18n="thanks.hours">Mon – Fri, 8 am – 6 pm EST · Typical response: under 4 hours</span>
     </p>
 
     <!-- What happens next -->
     <div class="rounded-2xl p-6 mb-10 text-left" style="background: linear-gradient(145deg, rgba(245,158,11,0.07), rgba(17,17,24,0.8)); border: 1px solid rgba(245,158,11,0.2);">
-      <h4 class="font-heading text-[11px] font-bold text-brand-400 tracking-widest uppercase mb-5">What Happens Next</h4>
+      <h4 class="font-heading text-[11px] font-bold text-brand-400 tracking-widest uppercase mb-5" data-i18n="thanks.next.title">What Happens Next</h4>
       <div class="space-y-4">
         <div class="flex items-start gap-3">
           <div class="w-6 h-6 rounded-full flex items-center justify-center text-black text-xs font-bold flex-shrink-0 mt-0.5" style="background: #f59e0b;">1</div>
-          <p class="text-slate-400 text-sm">Our team reviews your project details and energy requirements</p>
+          <p class="text-slate-400 text-sm" data-i18n="thanks.next.s1">Our team reviews your project details and energy requirements</p>
         </div>
         <div class="flex items-start gap-3">
           <div class="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5" style="background: rgba(245,158,11,0.45);">2</div>
-          <p class="text-slate-400 text-sm">A certified engineer calls you during working hours to discuss your needs</p>
+          <p class="text-slate-400 text-sm" data-i18n="thanks.next.s2">A certified engineer calls you during working hours to discuss your needs</p>
         </div>
         <div class="flex items-start gap-3">
           <div class="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5" style="background: rgba(245,158,11,0.22);">3</div>
-          <p class="text-slate-400 text-sm">You receive a custom system design and detailed quote — completely free</p>
+          <p class="text-slate-400 text-sm" data-i18n="thanks.next.s3">You receive a custom system design and detailed quote — completely free</p>
         </div>
       </div>
     </div>
@@ -133,11 +149,11 @@
     <div class="flex flex-wrap justify-center gap-4">
       <a href="index.html" class="btn-primary px-8 py-3.5 rounded-xl text-sm flex items-center gap-2.5">
         <i class="fas fa-house text-sm relative z-10"></i>
-        Back to Home
+        <span data-i18n="thanks.home">Back to Home</span>
       </a>
       <a href="solutions.html" class="btn-outline px-8 py-3.5 rounded-xl text-sm flex items-center gap-2.5">
         <i class="fas fa-solar-panel text-sm"></i>
-        Explore Solutions
+        <span data-i18n="thanks.solutions">Explore Solutions</span>
       </a>
     </div>
 
