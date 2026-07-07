@@ -11,7 +11,7 @@ const T = {
     // Nav
     'nav.home': 'Home', 'nav.solutions': 'Solutions', 'nav.why-us': 'Why Us',
     'nav.projects': 'Projects', 'nav.process': 'Process', 'nav.about': 'About',
-    'nav.contact': 'Contact', 'nav.get-quote': 'GET A QUOTE', 'nav.get-free-quote': 'GET A FREE QUOTE',
+    'nav.faq': 'FAQ', 'nav.contact': 'Contact', 'nav.get-quote': 'GET A QUOTE', 'nav.get-free-quote': 'GET A FREE QUOTE',
 
     // Hero
     'hero.badge': 'Autonomous Solar Power Systems',
@@ -198,7 +198,7 @@ const T = {
     // Nav
     'nav.home': 'Главная', 'nav.solutions': 'Решения', 'nav.why-us': 'Почему мы',
     'nav.projects': 'Проекты', 'nav.process': 'Процесс', 'nav.about': 'О нас',
-    'nav.contact': 'Контакты', 'nav.get-quote': 'ПОЛУЧИТЬ ЦЕНУ', 'nav.get-free-quote': 'БЕСПЛАТНОЕ ПРЕДЛОЖЕНИЕ',
+    'nav.faq': 'FAQ', 'nav.contact': 'Контакты', 'nav.get-quote': 'ПОЛУЧИТЬ ЦЕНУ', 'nav.get-free-quote': 'БЕСПЛАТНОЕ ПРЕДЛОЖЕНИЕ',
 
     // Hero
     'hero.badge': 'Автономные Системы Солнечной Энергии',
@@ -385,7 +385,7 @@ const T = {
     // Nav
     'nav.home': 'Αρχική', 'nav.solutions': 'Λύσεις', 'nav.why-us': 'Γιατί εμείς',
     'nav.projects': 'Έργα', 'nav.process': 'Διαδικασία', 'nav.about': 'Σχετικά',
-    'nav.contact': 'Επικοινωνία', 'nav.get-quote': 'ΑΙΤΗΣΗ ΤΙΜΗΣ', 'nav.get-free-quote': 'ΔΩΡΕΑΝ ΠΡΟΣΦΟΡΑ',
+    'nav.faq': 'FAQ', 'nav.contact': 'Επικοινωνία', 'nav.get-quote': 'ΑΙΤΗΣΗ ΤΙΜΗΣ', 'nav.get-free-quote': 'ΔΩΡΕΑΝ ΠΡΟΣΦΟΡΑ',
 
     // Hero
     'hero.badge': 'Αυτόνομα Ηλιακά Συστήματα Ενέργειας',
