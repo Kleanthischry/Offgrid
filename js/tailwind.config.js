@@ -15,22 +15,28 @@ tailwind.config = {
       },
 
       colors: {
-        // Neon green brand palette — used for CTAs, accents, and highlights
+        // Forest-green brand palette (from logo) — CTAs, accents, highlights
         brand: {
-          50:  '#f0fff9',
-          100: '#ccffe8',
-          400: '#00ff88',
-          500: '#00e676',
-          600: '#00cc66',
-          700: '#009944',
+          50:  '#f2f7ee',
+          100: '#dcecd0',
+          400: '#8fca6f',
+          500: '#6ba84e',
+          600: '#4a7a3c',
+          700: '#3a5f30',
         },
-        // Deep dark surface scale with green tint (darkest = 900)
+        // Golden accent (from logo sun) — secondary highlights
+        gold: {
+          400: '#f2ba45',
+          500: '#e9a62b',
+          600: '#c78a1f',
+        },
+        // Deep navy surface scale (from logo navy; darkest = 900)
         surface: {
-          900: '#040b06',
-          800: '#081409',
-          700: '#0c1c0e',
-          600: '#112513',
-          500: '#162e19',
+          900: '#0b1220',
+          800: '#0f1728',
+          700: '#141f34',
+          600: '#1a2740',
+          500: '#21304e',
         },
       },
 
@@ -44,8 +50,8 @@ tailwind.config = {
       keyframes: {
         // Neon green glow pulse used on live-indicator dots
         pulseAmber: {
-          '0%,100%': { boxShadow: '0 0 4px 0 rgba(0,255,136,0.5)' },
-          '50%':     { boxShadow: '0 0 14px 5px rgba(0,255,136,0.15)' },
+          '0%,100%': { boxShadow: '0 0 4px 0 rgba(143,202,111,0.5)' },
+          '50%':     { boxShadow: '0 0 14px 5px rgba(143,202,111,0.15)' },
         },
         // Gentle vertical float used on decorative elements
         float: {

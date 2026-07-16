@@ -9,6 +9,9 @@
   <meta property="og:type" content="website" />
   <title>Projects | Off Grid Systems</title>
 
+  <meta property="og:image" content="images/logo.jpg" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+  <link rel="apple-touch-icon" href="images/logo.jpg" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind.config.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -29,10 +32,10 @@
     <div class="flex items-center justify-between">
 
       <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
-        <img src="logo.png" alt="Off Grid Power Systems" class="h-12 w-auto"
+        <img src="images/logo.jpg" alt="Off Grid Systems" class="h-12 w-auto rounded-lg bg-white p-1 shadow-sm"
              onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';" />
         <div id="logo-fallback" class="items-center gap-3" style="display:none;">
-          <div class="relative w-10 h-10 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg,#d97706,#f59e0b);">
+          <div class="relative w-10 h-10 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg,#c78a1f,#e9a62b);">
             <i class="fas fa-solar-panel text-black text-base"></i>
             <span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-brand-400 border-2 border-surface-900 animate-pulse"></span>
           </div>
@@ -118,7 +121,7 @@
       <span data-i18n="proj.title1">FEATURED</span> <span class="gradient-text" data-i18n="proj.title2">PROJECTS</span>
     </h1>
     <p class="text-slate-400 text-lg max-w-2xl mx-auto reveal reveal-delay-2" data-i18n="proj.sub">
-      Real installations. Real results. Explore a selection of our most impactful off-grid energy deployments.
+      Real, already-installed off-grid systems. We build completely autonomous power for homes, factories, and water-pumping stations — programming and balancing the lithium batteries in-house, with 24/7 monitoring from a phone app.
     </p>
   </div>
 </section>
@@ -131,11 +134,35 @@
   <div class="absolute inset-0 grid-bg opacity-15 pointer-events-none"></div>
   <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
 
-      <!-- Project 1 -->
-      <div class="proj-card reveal reveal-delay-1">
-        <div class="proj-img h-full" style="background: linear-gradient(135deg, #0d2010 0%, #1a3a1e 50%, #0f2a14 100%);"></div>
+      <!-- Project 1 — battery bank -->
+      <div class="proj-card reveal reveal-delay-1" style="background: linear-gradient(135deg, #0d2010 0%, #1a3a1e 50%, #0f2a14 100%);">
+        <img src="images/battery.jpg" alt="Custom LiFePO₄ battery bank with programmable BMS" class="proj-img" onerror="this.style.display='none';" />
+        <div class="proj-overlay"></div>
+        <div class="proj-content">
+          <div class="flex justify-between items-start">
+            <span class="bg-green-500/20 border border-green-500/30 text-green-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">✓ <span data-i18n="proj.status.done">COMPLETED</span></span>
+            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.storage">ENERGY STORAGE</span>
+          </div>
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-brand-500/15 border border-brand-500/25 flex items-center justify-center mb-3">
+              <i class="fas fa-battery-full text-brand-400"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj1.title">Custom Lithium Battery Bank</h3>
+            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj1.desc">Hand-built LiFePO₄ bank with a programmable battery management system — cells balanced and charge parameters tuned on site, live state-of-charge on the display.</p>
+            <div class="proj-tags">
+              <span><i class="fas fa-sliders text-brand-400"></i><span data-i18n="proj.tag.programmed">Programmed BMS</span></span>
+              <span><i class="fas fa-scale-balanced text-brand-400"></i><span data-i18n="proj.tag.balanced">Cell balancing</span></span>
+              <span><i class="fas fa-mobile-screen text-brand-400"></i><span data-i18n="proj.tag.app">App monitoring</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 — hybrid inverter -->
+      <div class="proj-card reveal reveal-delay-2" style="background: linear-gradient(135deg, #1a1500 0%, #2e2600 50%, #1a1500 100%);">
+        <img src="images/inv%20solis.jpg" alt="Wall-mounted hybrid inverter installation" class="proj-img" onerror="this.style.display='none';" />
         <div class="proj-overlay"></div>
         <div class="proj-content">
           <div class="flex justify-between items-start">
@@ -144,65 +171,38 @@
           </div>
           <div>
             <div class="w-11 h-11 rounded-xl bg-brand-500/15 border border-brand-500/25 flex items-center justify-center mb-3">
-              <i class="fas fa-mountain-sun text-brand-400"></i>
+              <i class="fas fa-house text-brand-400"></i>
             </div>
-            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj1.title">Alpine Villa — Swiss Alps</h3>
-            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj1.desc">12 kWp bifacial array + 24 kWh LiFePO₄ bank. Full off-grid operation year-round including harsh alpine winters.</p>
-            <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
-              <span><i class="fas fa-solar-panel text-brand-400 mr-1"></i>12 kWp</span>
-              <span><i class="fas fa-battery-full text-brand-400 mr-1"></i>24 kWh</span>
-              <span><i class="fas fa-calendar text-brand-400 mr-1"></i>2024</span>
-              <span><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Switzerland</span>
+            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj2.title">Home Hybrid Inverter</h3>
+            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj2.desc">Wall-mounted hybrid inverter wired and commissioned for fully autonomous off-grid operation — clean, labelled cabling built to last.</p>
+            <div class="proj-tags">
+              <span><i class="fas fa-plug-circle-bolt text-brand-400"></i><span data-i18n="proj.tag.autonomous">Fully autonomous</span></span>
+              <span><i class="fas fa-power-off text-brand-400"></i><span data-i18n="proj.tag.nogrid">No grid needed</span></span>
+              <span><i class="fas fa-mobile-screen text-brand-400"></i><span data-i18n="proj.tag.app">App monitoring</span></span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="proj-card reveal reveal-delay-2">
-        <div class="proj-img h-full" style="background: linear-gradient(135deg, #1a1500 0%, #2e2600 50%, #1a1500 100%);"></div>
+      <!-- Project 3 — three-phase / factory -->
+      <div class="proj-card reveal reveal-delay-3" style="background: linear-gradient(135deg, #070d1a 0%, #0e1a30 50%, #070d1a 100%);">
+        <img src="images/inverter%20invt.jpg" alt="Three-phase hybrid inverter for a factory" class="proj-img" onerror="this.style.display='none';" />
         <div class="proj-overlay"></div>
         <div class="proj-content">
           <div class="flex justify-between items-start">
             <span class="bg-green-500/20 border border-green-500/30 text-green-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">✓ <span data-i18n="proj.status.done">COMPLETED</span></span>
-            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.agr">AGRICULTURAL</span>
+            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.industrial">FACTORY</span>
           </div>
           <div>
             <div class="w-11 h-11 rounded-xl bg-brand-500/15 border border-brand-500/25 flex items-center justify-center mb-3">
-              <i class="fas fa-tractor text-brand-400"></i>
+              <i class="fas fa-industry text-brand-400"></i>
             </div>
-            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj2.title">Outback Farm — Queensland</h3>
-            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj2.desc">45 kWp ground-mount with 100 kWh BYD storage. Powers full farm irrigation, sheds, and 3-bedroom homestead.</p>
-            <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
-              <span><i class="fas fa-solar-panel text-brand-400 mr-1"></i>45 kWp</span>
-              <span><i class="fas fa-battery-full text-brand-400 mr-1"></i>100 kWh</span>
-              <span><i class="fas fa-calendar text-brand-400 mr-1"></i>2023</span>
-              <span><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Australia</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="proj-card reveal reveal-delay-3">
-        <div class="proj-img h-full" style="background: linear-gradient(135deg, #070d1a 0%, #0e1a30 50%, #070d1a 100%);"></div>
-        <div class="proj-overlay"></div>
-        <div class="proj-content">
-          <div class="flex justify-between items-start">
-            <span class="bg-blue-500/20 border border-blue-500/30 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">⬡ <span data-i18n="proj.status.wip">IN PROGRESS</span></span>
-            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.com">COMMERCIAL</span>
-          </div>
-          <div>
-            <div class="w-11 h-11 rounded-xl bg-brand-500/15 border border-brand-500/25 flex items-center justify-center mb-3">
-              <i class="fas fa-tower-cell text-brand-400"></i>
-            </div>
-            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj3.title">Telecom Array — Morocco</h3>
-            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj3.desc">20 kWp hybrid system + diesel backup powering 3 telecom towers in extreme desert heat. 99.99% SLA required.</p>
-            <div class="flex flex-wrap gap-3 text-[11px] text-slate-400">
-              <span><i class="fas fa-solar-panel text-brand-400 mr-1"></i>20 kWp</span>
-              <span><i class="fas fa-battery-full text-brand-400 mr-1"></i>40 kWh</span>
-              <span><i class="fas fa-calendar text-brand-400 mr-1"></i>2025</span>
-              <span><i class="fas fa-map-marker-alt text-brand-400 mr-1"></i>Morocco</span>
+            <h3 class="font-heading text-xl font-bold text-white mb-1.5" data-i18n="proj3.title">Three-Phase Factory System</h3>
+            <p class="text-slate-400 text-xs mb-4 leading-relaxed" data-i18n="proj3.desc">Three-phase hybrid inverter powering a factory load off-grid — sized to run machinery and water pumps without the utility.</p>
+            <div class="proj-tags">
+              <span><i class="fas fa-bolt text-brand-400"></i><span data-i18n="proj.tag.threephase">Three-phase</span></span>
+              <span><i class="fas fa-water text-brand-400"></i><span data-i18n="proj.tag.pumps">Water pumps</span></span>
+              <span><i class="fas fa-mobile-screen text-brand-400"></i><span data-i18n="proj.tag.app">App monitoring</span></span>
             </div>
           </div>
         </div>
@@ -210,24 +210,23 @@
 
     </div>
 
-    <!-- Project 4 — full width -->
-    <div class="proj-card reveal" style="height: 280px;">
-      <div class="proj-img h-full" style="background: linear-gradient(135deg, #130a00 0%, #1f1000 30%, #0a0a13 70%, #130a00 100%);"></div>
-      <div class="proj-overlay" style="background: linear-gradient(to right, rgba(9,9,15,0.98) 0%, rgba(9,9,15,0.6) 50%, rgba(9,9,15,0.3) 100%);"></div>
+    <!-- Project 4 — full width: complete power room -->
+    <div class="proj-card reveal" style="height: 340px; background: linear-gradient(135deg, #06120b 0%, #0c2417 35%, #071a12 70%, #06120b 100%);">
+      <img src="images/solis%20system.jpg" alt="Complete off-grid power room with inverter and lithium storage" class="proj-img" onerror="this.style.display='none';" />
+      <div class="proj-overlay" style="background: linear-gradient(to right, rgba(11,18,32,0.97) 0%, rgba(11,18,32,0.7) 42%, rgba(11,18,32,0.28) 100%);"></div>
       <div class="proj-content flex-row items-center">
         <div class="max-w-lg">
           <div class="flex items-center gap-3 mb-3">
-            <span class="bg-purple-500/20 border border-purple-500/30 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">★ <span data-i18n="proj.status.flagship">FLAGSHIP</span></span>
-            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.resort">ISLAND RESORT</span>
+            <span class="bg-green-500/20 border border-green-500/30 text-green-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider">✓ <span data-i18n="proj.status.done">COMPLETED</span></span>
+            <span class="bg-brand-500/15 border border-brand-500/30 text-brand-400 text-[10px] font-bold px-3 py-1 rounded-full tracking-wider" data-i18n="proj.cat.turnkey">TURN-KEY OFF-GRID</span>
           </div>
-          <h3 class="font-heading text-2xl lg:text-3xl font-bold text-white mb-2" data-i18n="proj4.title">Pacific Island Eco-Resort — Fiji</h3>
-          <p class="text-slate-400 text-sm mb-4 leading-relaxed" data-i18n="proj4.desc">Our largest residential deployment to date: 120 kWp Canadian Solar array with 240 kWh Pylontech storage. Powers an entire 20-villa eco-resort — zero diesel, zero grid, zero emissions.</p>
-          <div class="flex flex-wrap gap-4 text-xs text-slate-400">
-            <span><i class="fas fa-solar-panel text-brand-400 mr-1.5"></i>120 kWp</span>
-            <span><i class="fas fa-battery-full text-brand-400 mr-1.5"></i>240 kWh</span>
-            <span><i class="fas fa-calendar text-brand-400 mr-1.5"></i>2022</span>
-            <span><i class="fas fa-map-marker-alt text-brand-400 mr-1.5"></i>Fiji, South Pacific</span>
-            <span><i class="fas fa-leaf text-green-400 mr-1.5"></i>Zero-emission operation</span>
+          <h3 class="font-heading text-2xl lg:text-3xl font-bold text-white mb-2" data-i18n="proj4.title">Complete Off-Grid Power Room</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed" data-i18n="proj4.desc">A turn-key installation: hybrid inverter and lithium battery storage assembled into one compact power room. Runs completely off-grid — no utility, no diesel — with the batteries programmed in-house and 24/7 monitoring from a phone app.</p>
+          <div class="proj-tags">
+            <span><i class="fas fa-plug-circle-bolt text-brand-400"></i><span data-i18n="proj.tag.autonomous">Fully autonomous</span></span>
+            <span><i class="fas fa-battery-full text-brand-400"></i><span data-i18n="proj.tag.lithium">Lithium storage</span></span>
+            <span><i class="fas fa-sliders text-brand-400"></i><span data-i18n="proj.tag.programmed">Programmed BMS</span></span>
+            <span><i class="fas fa-mobile-screen text-brand-400"></i><span data-i18n="proj.tag.app">24/7 app monitoring</span></span>
           </div>
         </div>
       </div>
@@ -243,9 +242,9 @@
 <section class="py-20 relative overflow-hidden">
   <div class="absolute inset-0" style="background: linear-gradient(135deg, #0f0a00 0%, #1a1000 40%, #0a0a0f 100%);"></div>
   <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
-  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(245,158,11,0.6),transparent);"></div>
-  <div class="absolute bottom-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(245,158,11,0.6),transparent);"></div>
-  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(245,158,11,0.07) 0%, transparent 65%);"></div>
+  <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(233,166,43,0.6),transparent);"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-px" style="background: linear-gradient(90deg,transparent,rgba(233,166,43,0.6),transparent);"></div>
+  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(233,166,43,0.07) 0%, transparent 65%);"></div>
 
   <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center relative z-10 reveal">
     <h2 class="font-heading font-bold text-white mb-5 leading-tight" style="font-size:clamp(2rem,5vw,3.2rem);">
@@ -277,10 +276,10 @@
 
       <div>
         <a href="index.html" class="flex items-center gap-3 mb-5">
-          <img src="logo.png" alt="Off Grid Power Systems" class="h-14 w-auto"
+          <img src="images/logo.jpg" alt="Off Grid Systems" class="h-16 w-auto rounded-xl bg-white p-1.5 shadow-sm"
                onerror="this.style.display='none'; document.getElementById('foot-logo-fallback').style.display='flex';" />
           <div id="foot-logo-fallback" class="items-center gap-3" style="display:none;">
-            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg,#d97706,#f59e0b);">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg,#c78a1f,#e9a62b);">
               <i class="fas fa-solar-panel text-black text-base"></i>
             </div>
             <div class="leading-none">
