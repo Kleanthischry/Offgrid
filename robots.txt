@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace the domain below with your real domain once deployed.
-Sitemap: https://REPLACE-WITH-YOUR-DOMAIN/sitemap.xml
+Sitemap: https://off-gridsystems.com/sitemap.xml
