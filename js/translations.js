@@ -31,10 +31,10 @@ const T = {
     'home.card1.desc': 'Residential, farm, cabin, and commercial off-grid solutions engineered for your site.',
     'home.card1.link': 'VIEW SOLUTIONS',
     'home.card2.title': 'Case Studies',
-    'home.card2.desc': 'Real installations across 40+ countries - from alpine villas to Pacific island resorts.',
+    'home.card2.desc': 'Real installations in demanding environments - from alpine villas to island resorts.',
     'home.card2.link': 'SEE PROJECTS',
     'home.card3.title': 'About Us',
-    'home.card3.desc': 'Engineering energy freedom since 2010. ISO certified, tier-1 components, lifetime support.',
+    'home.card3.desc': 'Engineering energy freedom. ISO certified, tier-1 components, lifetime support.',
     'home.card3.link': 'OUR STORY',
     'home.card4.title': 'Get a Quote',
     'home.card4.desc': 'Free site analysis and custom system design. Our engineers respond within 4 hours.',
@@ -126,12 +126,12 @@ const T = {
     'rev2.name': 'Andreas Georgiou', 'rev2.role': 'AgroGrid Elite - Paphos, Cyprus',
     'rev3.quote': "Our seaside estate near Limassol had constant power cuts every summer. Off Grid Systems designed a full solar and battery setup that runs the entire property - pool, climate control, everything. We monitor every watt in real time from an app. A truly professional team.",
     'rev3.name': 'Dmitry Volkov', 'rev3.role': 'Private Estate - Limassol, Cyprus',
-    'rev.total': '200+ verified reviews',
+    'rev.total': 'Verified client reviews',
     'rev.verified-google': 'Verified by Google', 'rev.verified-trustpilot': 'Verified by Trustpilot', 'rev.verified-clutch': 'Verified by Clutch',
 
     // About
     'about.badge': 'Our Story', 'about.title1': 'ENGINEERING', 'about.title2': 'ENERGY FREEDOM', 'about.title3': 'SINCE 2010',
-    'about.hero.sub': "Since 2010, we've deployed autonomous solar systems across the planet's most remote and demanding environments.",
+    'about.hero.sub': "We deploy autonomous solar systems across the planet's most remote and demanding environments.",
     'about.p1': "Off Grid Systems was founded by a team of renewable energy engineers who believed that reliable, clean power shouldn't require proximity to a utility grid. We've spent over a decade designing and deploying autonomous solar PV systems across the planet's most remote and demanding environments.",
     'about.p2': 'From alpine chalets in the Swiss Alps to agricultural estates in the Australian outback, from Saharan telecom towers to Pacific island eco-resorts - we\'ve proven that with the right engineering, solar energy can power anything, anywhere, anytime.',
     'about.feat1.title': 'European Tier-1 Components',
@@ -139,7 +139,7 @@ const T = {
     'about.feat2.title': 'Full Turnkey Delivery',
     'about.feat2.desc': 'Site survey, energy analysis, custom system design, procurement, installation, commissioning, and long-term O&M - we own the whole process.',
     'about.feat3.title': 'Global Reach, Local Expertise',
-    'about.feat3.desc': 'Our certified partner network operates in 40+ countries, adapting every design to local climate, regulation, and grid interconnection standards.',
+    'about.feat3.desc': 'Our certified partner network adapts every design to local climate, regulation, and grid interconnection standards.',
     'about.diag.title': 'Complete System Architecture',
     'about.diag.sub': 'How your autonomous solar system works',
     'about.flow1.title': 'Solar PV Array',        'about.flow1.sub': 'Monocrystalline / bifacial panels from Sweden & Italy',
@@ -153,7 +153,7 @@ const T = {
 
     // CTA
     'cta.badge': 'Free Consultation Available', 'cta.title1': 'READY TO GO', 'cta.title2': 'OFF THE GRID?',
-    'cta.sub': 'Join 500+ homes, farms, and businesses that have achieved complete energy independence. Our engineers will design your perfect system - at zero cost.',
+    'cta.sub': 'Join the homes, farms, and businesses that have achieved complete energy independence. Our engineers will design your perfect system - at zero cost.',
     'cta.btn1': 'GET MY FREE QUOTE', 'cta.btn2': 'CALL AN ENGINEER NOW',
     'cta.note': 'Average response time: under 4 hours during business days',
 
@@ -222,10 +222,10 @@ const T = {
     'home.card1.desc': 'Жилые, фермерские, дачные и коммерческие автономные решения, разработанные для вашего объекта.',
     'home.card1.link': 'СМОТРЕТЬ РЕШЕНИЯ',
     'home.card2.title': 'Примеры проектов',
-    'home.card2.desc': 'Реальные установки в 40+ странах - от альпийских вилл до тихоокеанских курортов.',
+    'home.card2.desc': 'Реальные установки в самых сложных условиях - от альпийских вилл до островных курортов.',
     'home.card2.link': 'СМОТРЕТЬ ПРОЕКТЫ',
     'home.card3.title': 'О нас',
-    'home.card3.desc': 'Инжиниринг энергетической свободы с 2010 года. Сертификат ISO, компоненты первого уровня, пожизненная поддержка.',
+    'home.card3.desc': 'Инжиниринг энергетической свободы. Сертификат ISO, компоненты первого уровня, пожизненная поддержка.',
     'home.card3.link': 'НАША ИСТОРИЯ',
     'home.card4.title': 'Запросить цену',
     'home.card4.desc': 'Бесплатный анализ объекта и индивидуальный проект системы. Наши инженеры отвечают в течение 4 часов.',
@@ -317,12 +317,12 @@ const T = {
     'rev2.name': 'Андреас Георгиу', 'rev2.role': 'AgroGrid Elite - Пафос, Кипр',
     'rev3.quote': 'На нашем поместье у моря рядом с Лимассолом каждое лето постоянно отключали электричество. Off Grid Systems спроектировали полную систему на солнечных панелях и аккумуляторах, которая питает всю территорию - бассейн, климат-контроль, всё. Мы отслеживаем каждый ватт в реальном времени через приложение. По-настоящему профессиональная команда.',
     'rev3.name': 'Дмитрий Волков', 'rev3.role': 'Частное поместье - Лимассол, Кипр',
-    'rev.total': '200+ проверенных отзывов',
+    'rev.total': 'Проверенные отзывы клиентов',
     'rev.verified-google': 'Подтверждено Google', 'rev.verified-trustpilot': 'Подтверждено Trustpilot', 'rev.verified-clutch': 'Подтверждено Clutch',
 
     // About
     'about.badge': 'Наша история', 'about.title1': 'ИНЖИНИРИНГ', 'about.title2': 'ЭНЕРГЕТИЧЕСКОЙ СВОБОДЫ', 'about.title3': 'С 2010 ГОДА',
-    'about.hero.sub': 'С 2010 года мы внедряем автономные солнечные системы в самых отдалённых и сложных условиях планеты.',
+    'about.hero.sub': 'Мы внедряем автономные солнечные системы в самых отдалённых и сложных условиях планеты.',
     'about.p1': 'Off Grid Systems была основана командой инженеров возобновляемой энергетики, убеждённых, что надёжное, чистое электроснабжение не должно зависеть от централизованной сети. Мы провели более десяти лет, проектируя и внедряя автономные солнечные фотоэлектрические системы в самых отдалённых условиях планеты.',
     'about.p2': 'От альпийских шале в Швейцарских Альпах до сельскохозяйственных угодий в австралийском аутбэке, от телекоммуникационных башен в Сахаре до тихоокеанских эко-курортов - мы доказали, что при правильном инжиниринге солнечная энергия может питать всё, везде и всегда.',
     'about.feat1.title': 'Европейские компоненты первого уровня',
@@ -330,7 +330,7 @@ const T = {
     'about.feat2.title': 'Полный цикл работ под ключ',
     'about.feat2.desc': 'Обследование объекта, энергетический анализ, индивидуальный проект, закупка, монтаж, ввод в эксплуатацию и долгосрочное обслуживание - мы контролируем весь процесс.',
     'about.feat3.title': 'Глобальный охват, местная экспертиза',
-    'about.feat3.desc': 'Наша сеть сертифицированных партнёров работает в 40+ странах, адаптируя каждый проект к местному климату, нормативам и стандартам подключения.',
+    'about.feat3.desc': 'Наша сеть сертифицированных партнёров адаптирует каждый проект к местному климату, нормативам и стандартам подключения.',
     'about.diag.title': 'Архитектура полной системы',
     'about.diag.sub': 'Как работает ваша автономная солнечная система',
     'about.flow1.title': 'Солнечная фотоэлектрическая система', 'about.flow1.sub': 'Монокристаллические / бифациальные панели из Швеции и Италии',
@@ -344,7 +344,7 @@ const T = {
 
     // CTA
     'cta.badge': 'Бесплатная консультация', 'cta.title1': 'ГОТОВЫ СТАТЬ', 'cta.title2': 'НЕЗАВИСИМЫМИ?',
-    'cta.sub': 'Присоединяйтесь к 500+ домам, фермам и компаниям, достигшим полной энергетической независимости. Наши инженеры разработают для вас идеальную систему - бесплатно.',
+    'cta.sub': 'Присоединяйтесь к домам, фермам и компаниям, достигшим полной энергетической независимости. Наши инженеры разработают для вас идеальную систему - бесплатно.',
     'cta.btn1': 'ПОЛУЧИТЬ МОЁ ПРЕДЛОЖЕНИЕ', 'cta.btn2': 'ПОЗВОНИТЕ ИНЖЕНЕРУ',
     'cta.note': 'Среднее время ответа: менее 4 часов в рабочие дни',
 
@@ -413,10 +413,10 @@ const T = {
     'home.card1.desc': 'Οικιστικές, αγροτικές, εξοχικές και εμπορικές αυτόνομες λύσεις σχεδιασμένες για τον χώρο σας.',
     'home.card1.link': 'ΔΕΙΤΕ ΤΙΣ ΛΥΣΕΙΣ',
     'home.card2.title': 'Μελέτες Περίπτωσης',
-    'home.card2.desc': 'Πραγματικές εγκαταστάσεις σε 40+ χώρες - από αλπικές βίλες έως θέρετρα του Ειρηνικού.',
+    'home.card2.desc': 'Πραγματικές εγκαταστάσεις σε απαιτητικά περιβάλλοντα - από αλπικές βίλες έως νησιωτικά θέρετρα.',
     'home.card2.link': 'ΔΕΙΤΕ ΤΑ ΕΡΓΑ',
     'home.card3.title': 'Σχετικά με εμάς',
-    'home.card3.desc': 'Μηχανική ενεργειακής ελευθερίας από το 2010. Πιστοποίηση ISO, εξαρτήματα επιπέδου 1, υποστήριξη δια βίου.',
+    'home.card3.desc': 'Μηχανική ενεργειακής ελευθερίας. Πιστοποίηση ISO, εξαρτήματα επιπέδου 1, υποστήριξη δια βίου.',
     'home.card3.link': 'Η ΙΣΤΟΡΙΑ ΜΑΣ',
     'home.card4.title': 'Αίτηση Τιμής',
     'home.card4.desc': 'Δωρεάν ανάλυση τοποθεσίας και εξατομικευμένος σχεδιασμός. Οι μηχανικοί μας απαντούν εντός 4 ωρών.',
@@ -508,12 +508,12 @@ const T = {
     'rev2.name': 'Ανδρέας Γεωργίου', 'rev2.role': 'AgroGrid Elite - Πάφος, Κύπρος',
     'rev3.quote': 'Το παραθαλάσσιο κτήμα μας κοντά στη Λεμεσό είχε συνεχείς διακοπές ρεύματος κάθε καλοκαίρι. Η Off Grid Systems σχεδίασε ένα πλήρες σύστημα ηλιακής ενέργειας και μπαταριών που τροφοδοτεί ολόκληρη την ιδιοκτησία - πισίνα, κλιματισμό, τα πάντα. Παρακολουθούμε κάθε watt σε πραγματικό χρόνο από μια εφαρμογή. Πραγματικά επαγγελματική ομάδα.',
     'rev3.name': 'Ντμίτρι Βόλκοφ', 'rev3.role': 'Ιδιωτικό κτήμα - Λεμεσός, Κύπρος',
-    'rev.total': '200+ επαληθευμένες αξιολογήσεις',
+    'rev.total': 'Επαληθευμένες αξιολογήσεις πελατών',
     'rev.verified-google': 'Επαληθεύτηκε από Google', 'rev.verified-trustpilot': 'Επαληθεύτηκε από Trustpilot', 'rev.verified-clutch': 'Επαληθεύτηκε από Clutch',
 
     // About
     'about.badge': 'Η Ιστορία μας', 'about.title1': 'ΜΗΧΑΝΙΚΗ', 'about.title2': 'ΕΝΕΡΓΕΙΑΚΗΣ ΕΛΕΥΘΕΡΙΑΣ', 'about.title3': 'ΑΠΟ ΤΟ 2010',
-    'about.hero.sub': 'Από το 2010, αναπτύσσουμε αυτόνομα ηλιακά συστήματα στα πιο απομακρυσμένα και απαιτητικά περιβάλλοντα του πλανήτη.',
+    'about.hero.sub': 'Αναπτύσσουμε αυτόνομα ηλιακά συστήματα στα πιο απομακρυσμένα και απαιτητικά περιβάλλοντα του πλανήτη.',
     'about.p1': 'Η Off Grid Systems ιδρύθηκε από ομάδα μηχανικών ανανεώσιμης ενέργειας που πίστευαν ότι η αξιόπιστη, καθαρή ενέργεια δεν πρέπει να εξαρτάται από την εγγύτητα στο δίκτυο. Αφιερώσαμε πάνω από μια δεκαετία σχεδιάζοντας και αναπτύσσοντας αυτόνομα ηλιακά φωτοβολταϊκά συστήματα στα πιο απομακρυσμένα περιβάλλοντα του πλανήτη.',
     'about.p2': 'Από αλπικά σαλέ στις Ελβετικές Άλπεις έως αγροτικές κτήσεις στο αυστραλιανό outback, από πύργους τηλεπικοινωνιών στη Σαχάρα έως οικολογικά θέρετρα στον Ειρηνικό - έχουμε αποδείξει ότι με τη σωστή μηχανική, η ηλιακή ενέργεια μπορεί να τροφοδοτήσει τα πάντα, παντού, πάντα.',
     'about.feat1.title': 'Ευρωπαϊκά Εξαρτήματα Επιπέδου 1',
@@ -521,7 +521,7 @@ const T = {
     'about.feat2.title': 'Πλήρης Παράδοση Κλειδί στο Χέρι',
     'about.feat2.desc': 'Έρευνα τοποθεσίας, ενεργειακή ανάλυση, εξατομικευμένος σχεδιασμός, προμήθεια, εγκατάσταση, θέση σε λειτουργία και μακροπρόθεσμη συντήρηση - ελέγχουμε ολόκληρη τη διαδικασία.',
     'about.feat3.title': 'Παγκόσμια Εμβέλεια, Τοπική Εμπειρογνωσία',
-    'about.feat3.desc': 'Το πιστοποιημένο δίκτυο συνεργατών μας λειτουργεί σε 40+ χώρες, προσαρμόζοντας κάθε σχεδιασμό στο τοπικό κλίμα, τους κανονισμούς και τα πρότυπα διασύνδεσης.',
+    'about.feat3.desc': 'Το πιστοποιημένο δίκτυο συνεργατών μας προσαρμόζει κάθε σχεδιασμό στο τοπικό κλίμα, τους κανονισμούς και τα πρότυπα διασύνδεσης.',
     'about.diag.title': 'Πλήρης Αρχιτεκτονική Συστήματος',
     'about.diag.sub': 'Πώς λειτουργεί το αυτόνομο ηλιακό σύστημά σας',
     'about.flow1.title': 'Ηλιακή Φωτοβολταϊκή Συστοιχία', 'about.flow1.sub': 'Μονοκρυσταλλικά / διπλής όψης πάνελ από Σουηδία & Ιταλία',
@@ -535,7 +535,7 @@ const T = {
 
     // CTA
     'cta.badge': 'Δωρεάν Διαβούλευση', 'cta.title1': 'ΕΤΟΙΜΟΙ ΝΑ ΓΙΝΕΤΕ', 'cta.title2': 'ΑΝΕΞΑΡΤΗΤΟΙ;',
-    'cta.sub': 'Γίνετε μέλος 500+ σπιτιών, αγροκτημάτων και επιχειρήσεων που έχουν επιτύχει πλήρη ενεργειακή ανεξαρτησία. Οι μηχανικοί μας θα σχεδιάσουν το ιδανικό σύστημα για εσάς - δωρεάν.',
+    'cta.sub': 'Γίνετε μέλος των σπιτιών, αγροκτημάτων και επιχειρήσεων που έχουν επιτύχει πλήρη ενεργειακή ανεξαρτησία. Οι μηχανικοί μας θα σχεδιάσουν το ιδανικό σύστημα για εσάς - δωρεάν.',
     'cta.btn1': 'ΛΑΒΕΤΕ ΤΗΝ ΠΡΟΣΦΟΡΑ ΜΟΥ', 'cta.btn2': 'ΚΑΛΕΣΤΕ ΜΗΧΑΝΙΚΟ',
     'cta.note': 'Μέσος χρόνος απόκρισης: εντός 4 ωρών κατά τις εργάσιμες ημέρες',
 
