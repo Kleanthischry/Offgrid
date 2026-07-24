@@ -186,7 +186,7 @@ const T = {
 
     // Footer
     'foot.solutions': 'Solutions', 'foot.company': 'Company', 'foot.contact': 'Contact',
-    'foot.desc': 'Engineering energy independence through autonomous solar photovoltaic systems. Trusted by 500+ clients across 40 countries since 2010.',
+    'foot.desc': 'Engineering energy independence through autonomous solar photovoltaic systems.',
     'foot.link.homebase': 'HomeBase Pro (Residential)', 'foot.link.agrogrid': 'AgroGrid Elite (Farm)',
     'foot.link.wildpower': 'WildPower Kit (Cabin)',     'foot.link.industrial': 'IndustrialCore (Commercial)',
     'foot.link.custom': 'Custom Engineering',
@@ -377,7 +377,7 @@ const T = {
 
     // Footer
     'foot.solutions': 'Решения', 'foot.company': 'Компания', 'foot.contact': 'Контакты',
-    'foot.desc': 'Инжиниринг энергетической независимости через автономные солнечные фотоэлектрические системы. Доверяют 500+ клиентов в 40 странах с 2010 года.',
+    'foot.desc': 'Инжиниринг энергетической независимости через автономные солнечные фотоэлектрические системы.',
     'foot.link.homebase': 'HomeBase Pro (Жилой)', 'foot.link.agrogrid': 'AgroGrid Elite (Ферма)',
     'foot.link.wildpower': 'WildPower Kit (Домик)', 'foot.link.industrial': 'IndustrialCore (Коммерческий)',
     'foot.link.custom': 'Индивидуальный инжиниринг',
@@ -568,7 +568,7 @@ const T = {
 
     // Footer
     'foot.solutions': 'Λύσεις', 'foot.company': 'Εταιρεία', 'foot.contact': 'Επικοινωνία',
-    'foot.desc': 'Μηχανική ενεργειακής ανεξαρτησίας μέσω αυτόνομων ηλιακών φωτοβολταϊκών συστημάτων. Εμπιστεύονται 500+ πελάτες σε 40 χώρες από το 2010.',
+    'foot.desc': 'Μηχανική ενεργειακής ανεξαρτησίας μέσω αυτόνομων ηλιακών φωτοβολταϊκών συστημάτων.',
     'foot.link.homebase': 'HomeBase Pro (Κατοικία)', 'foot.link.agrogrid': 'AgroGrid Elite (Αγρόκτημα)',
     'foot.link.wildpower': 'WildPower Kit (Καταφύγιο)', 'foot.link.industrial': 'IndustrialCore (Εμπορικό)',
     'foot.link.custom': 'Εξατομικευμένη Μηχανική',
