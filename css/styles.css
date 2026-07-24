@@ -354,6 +354,20 @@ html.light .proj-tags > span { color: #0f7a4d; background: rgba(74,122,60,0.09);
 }
 #mobile-menu.open { max-height: 480px; }
 
+/* Solid navbar backdrop while the mobile menu is open (the navbar is
+   transparent at the top of the page, so the menu would otherwise show
+   the hero through it). */
+#navbar.menu-open {
+  background: rgba(11,18,32,0.98) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(143,202,111,0.18);
+}
+html.light #navbar.menu-open {
+  background: rgba(248,250,252,0.98) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
 
 /* ---- Decorative spinning rings in hero section ------------------------ */
 .glow-ring {

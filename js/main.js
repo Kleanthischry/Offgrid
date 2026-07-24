@@ -45,22 +45,21 @@ const hamburgerIcon = document.getElementById('hamburger-icon');
 const mobileMenu    = document.getElementById('mobile-menu');
 let menuOpen        = false;
 
-hamburger.addEventListener('click', () => {
-  menuOpen = !menuOpen;
-  mobileMenu.classList.toggle('open', menuOpen);
-  mobileMenu.setAttribute('aria-hidden', String(!menuOpen));
+function setMenu(open) {
+  menuOpen = open;
+  mobileMenu.classList.toggle('open', open);
+  mobileMenu.setAttribute('aria-hidden', String(!open));
+  // Give the (otherwise transparent) navbar a solid backdrop while open
+  if (navbar) navbar.classList.toggle('menu-open', open);
   // Swap between ☰ and × icons
-  hamburgerIcon.className = menuOpen ? 'fas fa-xmark text-xl' : 'fas fa-bars text-xl';
-});
+  hamburgerIcon.className = open ? 'fas fa-xmark text-xl' : 'fas fa-bars text-xl';
+}
+
+hamburger.addEventListener('click', () => setMenu(!menuOpen));
 
 // Auto-close when a nav link inside the mobile menu is tapped
 document.querySelectorAll('.mobile-link').forEach(link => {
-  link.addEventListener('click', () => {
-    menuOpen = false;
-    mobileMenu.classList.remove('open');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    hamburgerIcon.className = 'fas fa-bars text-xl';
-  });
+  link.addEventListener('click', () => setMenu(false));
 });
 
 
