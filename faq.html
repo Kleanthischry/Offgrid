@@ -26,7 +26,7 @@
       overflow: hidden;
       transition: max-height 0.38s ease;
     }
-    .faq-item.open .faq-answer { max-height: 600px; }
+    .faq-item.open .faq-answer { max-height: 1400px; }
     .faq-chevron { transition: transform 0.3s ease; }
     .faq-item.open .faq-chevron { transform: rotate(180deg); }
     .faq-btn { transition: color 0.2s; }
@@ -88,9 +88,6 @@
           class="w-9 h-9 rounded-xl border border-white/10 hover:border-brand-500/30 flex items-center justify-center text-slate-400 hover:text-brand-400 transition-all">
           <i class="fas fa-moon text-sm" id="theme-icon"></i>
         </button>
-        <a href="tel:+15551234567" class="text-slate-400 hover:text-brand-400 text-sm transition-colors">
-          <i class="fas fa-phone-flip mr-1.5 text-brand-500"></i>+1 (555) 123-4567
-        </a>
         <a href="contact.html" class="btn-primary px-6 py-2.5 rounded-xl text-sm tracking-wide">
           <span data-i18n="nav.get-quote">GET A QUOTE</span>
         </a>
@@ -185,12 +182,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">1</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">What exactly is an off-grid solar system?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q1">What exactly is an off-grid solar system?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a1">
                 <p>An off-grid solar system is a completely standalone power setup that generates, stores, and delivers electricity independently of the utility grid. There is no monthly electricity bill, no blackout risk from grid failures, and no reliance on a utility provider.</p>
                 <p>The core components are: <strong class="text-slate-300">solar PV panels</strong> that harvest sunlight, a <strong class="text-slate-300">lithium battery bank</strong> that stores energy for nights and cloudy days, an <strong class="text-slate-300">MPPT charge controller</strong> that optimises the harvest, and a <strong class="text-slate-300">hybrid inverter</strong> that converts stored DC energy to standard AC power for your appliances.</p>
                 <p>Every system we design is engineered to cover 365 days a year — including winter months and consecutive overcast days — without any fuel or grid input.</p>
@@ -203,12 +200,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">2</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">Is off-grid solar reliable enough for full-time living?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q2">Is off-grid solar reliable enough for full-time living?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a2">
                 <p>Yes — our systems achieve <strong class="text-slate-300">99.9% measured uptime</strong> across our installed base. Hundreds of families, farms, and businesses worldwide live entirely on our systems with no grid connection whatsoever.</p>
                 <p>Reliability comes from proper sizing and redundancy. We model your specific location's solar irradiance data (at least 10 years of records) and design battery capacity to cover at least 3–5 consecutive days of zero solar input, depending on your latitude and season.</p>
                 <p>Optional backup generators can be integrated with automatic start logic for extreme conditions, though most clients never need to activate them.</p>
@@ -221,12 +218,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">3</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">How do I know what size system I need?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q3">How do I know what size system I need?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a3">
                 <p>System sizing depends on three key factors: your <strong class="text-slate-300">daily energy consumption</strong> (in kWh), your <strong class="text-slate-300">geographic location</strong> (peak sun hours), and your <strong class="text-slate-300">peak load requirements</strong> (the maximum watts all devices could draw simultaneously).</p>
                 <p>As a rough guide: a modern 3-bedroom home typically needs 8–15 kWp of panels and 20–40 kWh of battery storage. A large farm may need 30–60 kWp. A remote cabin might need only 2–5 kWp.</p>
                 <p>We include a <strong class="text-slate-300">free detailed energy audit and sizing report</strong> with every quote. Send us your details via the contact form and our engineers will produce an accurate specification within 24 hours.</p>
@@ -255,12 +252,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">4</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">What happens at night or on consecutive cloudy days?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q4">What happens at night or on consecutive cloudy days?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a4">
                 <p>At night, your <strong class="text-slate-300">lithium battery bank</strong> takes over seamlessly — the inverter continues delivering stable AC power with zero interruption. The transition is instantaneous and invisible to your appliances.</p>
                 <p>On cloudy days, panels still produce 10–30% of their rated output (depending on cloud density). The battery covers the deficit. We size the battery to handle your worst-case seasonal scenario with at least 3 days of autonomy — meaning 3 full days of zero solar input at your normal consumption level.</p>
                 <p>If you opt for an <strong class="text-slate-300">integrated generator</strong>, it will auto-start only when the battery state of charge drops below a configurable threshold (typically 20%), top it up, and shut off — all without any manual intervention.</p>
@@ -273,14 +270,14 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">5</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">How long do the batteries last?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q5">How long do the batteries last?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a5">
                 <p>We specify <strong class="text-slate-300">LiFePO₄ (lithium iron phosphate)</strong> batteries exclusively — the safest, most durable chemistry available. At a typical daily cycle, these batteries last <strong class="text-slate-300">10–15 years</strong>, rated for 6,000+ full charge cycles to 80% capacity.</p>
-                <p>This is dramatically better than traditional lead-acid batteries (3–5 years) and safer than other lithium chemistries (no thermal runaway risk). Our primary suppliers are BYD, Pylontech, and Victron — all with built-in Battery Management Systems (BMS) that protect against overcharge, over-discharge, and temperature extremes.</p>
+                <p>This is dramatically better than traditional lead-acid batteries (3–5 years) and safer than other lithium chemistries (no thermal runaway risk). Every pack comes from tier-1 manufacturers with built-in Battery Management Systems (BMS) that protect against overcharge, over-discharge, and temperature extremes.</p>
                 <p>Batteries are covered under our 7-year comprehensive warranty and come with a manufacturer performance guarantee of 10+ years.</p>
               </div>
             </div>
@@ -291,14 +288,14 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">6</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">Can I monitor and control my system remotely?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q6">Can I monitor and control my system remotely?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a6">
                 <p>Yes — every system includes a <strong class="text-slate-300">smart monitoring platform</strong> accessible via smartphone, tablet, or browser. You can see real-time solar production, battery state of charge, load consumption, and historical data from anywhere in the world.</p>
-                <p>Victron-based systems use the <strong class="text-slate-300">VRM Portal</strong> (web + app) and can send automatic alerts by email or SMS if any parameter falls outside normal ranges. SMA and Fronius systems have equivalent portals.</p>
+                <p>The <strong class="text-slate-300">monitoring portal</strong> (web + app) can send automatic alerts by email or SMS if any parameter falls outside normal ranges.</p>
                 <p>Our engineers also have remote diagnostic access — we can troubleshoot and often resolve issues without a site visit, saving you time and cost.</p>
               </div>
             </div>
@@ -325,12 +322,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">7</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">How long does the whole process take — from first contact to a live system?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q7">How long does the whole process take — from first contact to a live system?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a7">
                 <p>The typical timeline from initial inquiry to a commissioned system is <strong class="text-slate-300">6–14 weeks</strong>, depending on system size and location. Here is how it breaks down:</p>
                 <ul class="space-y-2 mt-2">
                   <li class="flex gap-2.5"><i class="fas fa-circle text-brand-400/50 text-[8px] mt-1.5 flex-shrink-0"></i><span><strong class="text-slate-300">Week 1–2:</strong> Free site analysis, energy audit, and custom system design</span></li>
@@ -349,12 +346,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">8</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">Do you install internationally? Can you come to my country?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q8">Do you install internationally? Can you come to my country?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a8">
                 <p>Yes — we operate across <strong class="text-slate-300">40+ countries</strong> through our certified partner installation network. We have completed projects on six continents, from Swiss alpine properties to Pacific island resorts.</p>
                 <p>For most countries, we deploy a local certified partner who handles on-site installation under our direct engineering supervision. For complex or large projects, our own engineers travel to the site for commissioning.</p>
                 <p>We manage all international logistics, customs documentation, and local compliance requirements on your behalf. Just tell us where your site is located when you submit your quote request.</p>
@@ -367,12 +364,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">9</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">Do I need planning permission or permits for an off-grid system?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q9">Do I need planning permission or permits for an off-grid system?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a9">
                 <p>Planning requirements <strong class="text-slate-300">vary significantly by country, region, and system size</strong>. In many jurisdictions, rooftop or ground-mounted systems below a certain kWp threshold are exempt from planning permission. Larger systems and ground arrays more commonly require permits.</p>
                 <p>As a pure off-grid system (no grid connection), you typically avoid the most complex grid-connection regulations. However, structural permits for mounting structures and building regulations for electrical installations still apply in most countries.</p>
                 <p><strong class="text-slate-300">We handle all permitting research and documentation as part of our full turnkey service.</strong> Our local partners are familiar with the regulations in their regions, and our team will guide you through every requirement relevant to your site before any work begins.</p>
@@ -401,12 +398,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">10</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">How much does an off-grid solar system cost?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q10">How much does an off-grid solar system cost?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a10">
                 <p>Costs vary widely based on system size, components, location, and installation complexity. Here are indicative ranges for fully installed, turnkey systems:</p>
                 <div class="mt-3 space-y-2">
                   <div class="flex items-center justify-between py-2.5 px-4 rounded-xl bg-surface-700/60 border border-white/5">
@@ -436,12 +433,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">11</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">What does your 7-year warranty cover?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q11">What does your 7-year warranty cover?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a11">
                 <p>Our <strong class="text-slate-300">7-year comprehensive system warranty</strong> is one of the broadest in the industry. It covers:</p>
                 <ul class="space-y-2 mt-2">
                   <li class="flex gap-2.5"><i class="fas fa-check text-brand-400 text-[10px] mt-1 flex-shrink-0"></i><span>All major components: solar panels, battery bank, inverter/charger, charge controller</span></li>
@@ -460,12 +457,12 @@
         <div class="faq-item rounded-2xl border border-white/6 overflow-hidden" style="background: rgba(15,23,40,0.7);">
           <button class="faq-btn w-full text-left px-6 py-5 flex items-center gap-4 text-white hover:text-brand-400">
             <div class="faq-icon w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-slate-500 border border-white/8 text-xs font-bold transition-all">12</div>
-            <span class="font-semibold text-[15px] leading-snug flex-1">Do you offer financing or payment plans?</span>
+            <span class="font-semibold text-[15px] leading-snug flex-1" data-i18n="faq.q12">Do you offer financing or payment plans?</span>
             <i class="fas fa-chevron-down faq-chevron text-slate-500 text-xs flex-shrink-0"></i>
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-6 pt-1">
-              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3">
+              <div class="pl-12 text-slate-400 leading-relaxed text-sm space-y-3" data-i18n-html="faq.a12">
                 <p>Yes — we work with several <strong class="text-slate-300">green energy financing partners</strong> to offer flexible payment options for qualified clients. Depending on your country and project size, options may include:</p>
                 <ul class="space-y-2 mt-2">
                   <li class="flex gap-2.5"><i class="fas fa-circle text-brand-400/50 text-[8px] mt-1.5 flex-shrink-0"></i><span>Stage-payment contracts (deposit on order, balance on commissioning)</span></li>
@@ -496,10 +493,6 @@
         <a href="contact.html" class="btn-primary px-8 py-3 rounded-xl text-sm flex items-center gap-2">
           <i class="fas fa-paper-plane text-xs relative z-10"></i>
           <span>Send Us a Message</span>
-        </a>
-        <a href="tel:+15551234567" class="btn-outline px-8 py-3 rounded-xl text-sm flex items-center gap-2">
-          <i class="fas fa-phone text-xs"></i>
-          <span>Call an Engineer</span>
         </a>
       </div>
     </div>
@@ -563,9 +556,7 @@
       <div>
         <h4 class="font-heading text-xs font-bold text-white tracking-widest uppercase mb-5" data-i18n="foot.contact">Contact</h4>
         <ul class="space-y-3 mb-6">
-          <li class="flex items-start gap-2 text-sm text-slate-500"><i class="fas fa-location-dot text-brand-500/60 text-xs mt-1 flex-shrink-0"></i>123 Solar Way, Denver, CO 80201, USA</li>
-          <li class="flex items-center gap-2 text-sm"><i class="fas fa-phone text-brand-500/60 text-xs flex-shrink-0"></i><a href="tel:+15551234567" class="text-slate-500 hover:text-brand-400 transition-colors">+1 (555) 123-4567</a></li>
-          <li class="flex items-center gap-2 text-sm"><i class="fas fa-envelope text-brand-500/60 text-xs flex-shrink-0"></i><a href="mailto:info@offgridsystems.com" class="text-slate-500 hover:text-brand-400 transition-colors">info@offgridsystems.com</a></li>
+          <li class="flex items-center gap-2 text-sm"><i class="fas fa-envelope text-brand-500/60 text-xs flex-shrink-0"></i><a href="mailto:offgridsystemscy@gmail.com" class="text-slate-500 hover:text-brand-400 transition-colors">offgridsystemscy@gmail.com</a></li>
         </ul>
         <div class="p-4 rounded-xl bg-surface-700 border border-white/6">
           <div class="text-[10px] text-slate-600 font-bold tracking-widest uppercase mb-2.5" data-i18n="foot.certif">Certifications</div>
@@ -600,6 +591,7 @@
 </button>
 
 <script src="js/translations.js"></script>
+<script src="js/faq-i18n.js"></script>
 <script src="js/main.js"></script>
 <script>
   /* FAQ Accordion */

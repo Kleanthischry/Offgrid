@@ -217,6 +217,11 @@ function applyTranslations(lang) {
     const key = el.getAttribute('data-i18n');
     if (strings[key] !== undefined) el.textContent = strings[key];
   });
+  // data-i18n-html: rich content (paragraphs, lists, <strong>) set as innerHTML
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (strings[key] !== undefined) el.innerHTML = strings[key];
+  });
   document.documentElement.lang = lang; // keep <html lang="…"> in sync
 }
 
