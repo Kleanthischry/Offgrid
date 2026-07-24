@@ -112,5 +112,3 @@ One-time setup (already configured):
 - [ ] **Wire up the contact form** — `contact.html` submits via `submitForm()` in `main.js` but has no real backend. Connect to a service such as Formspree, EmailJS, or a serverless function so enquiries actually get delivered.
 - [ ] **Remove remaining equipment-brand names** — the `faq.html` answers have been genericised, but brands still appear as the "trusted brands" logo rows on `index.html` and `about.html` (SMA, BYD, Victron) and in a testimonial on `about.html`. Decide whether to genericise or keep these.
 
-### Nice-to-have
-- [ ] **Add real phone / address (optional)** — the fake US phone (`+1 (555) 123-4567`) and address (`123 Solar Way, Denver, CO`) have been removed site-wide; the site is now email-only. Add a real Cyprus phone/address if/when you want them back (nav, footers, and the contact-page details card). Note: the orphaned `con.phone.*` / `con.hq.*` keys remain in `translations.js` for reuse.
