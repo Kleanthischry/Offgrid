@@ -16,7 +16,7 @@ const T = {
     // Hero
     'hero.badge': 'Autonomous Solar Power Systems',
     'hero.h1-1': 'POWER YOUR WORLD', 'hero.h1-2': 'OFF THE GRID',
-    'hero.sub': 'Complete autonomous photovoltaic systems engineered for absolute reliability — solar arrays, lithium battery storage, and smart inverters integrated for true energy independence.',
+    'hero.sub': 'Complete autonomous photovoltaic systems engineered for absolute reliability - solar arrays, lithium battery storage, and smart inverters integrated for true energy independence.',
     'hero.cta1': 'GET A FREE QUOTE', 'hero.cta2': 'VIEW OUR SYSTEMS',
     'hero.s1': 'Systems Installed', 'hero.s2': 'Full Warranty', 'hero.s3': 'System Uptime', 'hero.s4': 'Countries Served',
 
@@ -26,12 +26,12 @@ const T = {
     // Home overview
     'home.overview.title1': 'EVERYTHING YOU NEED FOR',
     'home.overview.title2': 'ENERGY INDEPENDENCE',
-    'home.overview.sub': 'From a single cabin to an industrial site — we engineer, install, and support the complete system.',
+    'home.overview.sub': 'From a single cabin to an industrial site - we engineer, install, and support the complete system.',
     'home.card1.title': 'Our Systems',
     'home.card1.desc': 'Residential, farm, cabin, and commercial off-grid solutions engineered for your site.',
     'home.card1.link': 'VIEW SOLUTIONS',
     'home.card2.title': 'Case Studies',
-    'home.card2.desc': 'Real installations across 40+ countries — from alpine villas to Pacific island resorts.',
+    'home.card2.desc': 'Real installations across 40+ countries - from alpine villas to Pacific island resorts.',
     'home.card2.link': 'SEE PROJECTS',
     'home.card3.title': 'About Us',
     'home.card3.desc': 'Engineering energy freedom since 2010. ISO certified, tier-1 components, lifetime support.',
@@ -42,7 +42,7 @@ const T = {
 
     // Solutions section
     'sol.badge': 'Our Systems', 'sol.title1': 'OFF-GRID POWER', 'sol.title2': 'SOLUTIONS',
-    'sol.sub': 'Engineered systems tailored for every application — from remote mountain retreats to large commercial operations.',
+    'sol.sub': 'Engineered systems tailored for every application - from remote mountain retreats to large commercial operations.',
     'sol.popular': 'POPULAR',
     'sol.get-quote': 'GET QUOTE',
     'sol1.cat': 'Residential',   'sol1.name': 'HomeBase Pro',
@@ -66,16 +66,16 @@ const T = {
 
     // Why Us
     'why.badge': 'Why Choose Us', 'why.title1': 'THE OFF GRID', 'why.title2': 'ADVANTAGE',
-    'why.sub': "We don't just sell solar panels. We engineer complete energy autonomy — backed by real-world experience, premium components, and lifetime support.",
+    'why.sub': "We don't just sell solar panels. We engineer complete energy autonomy - backed by real-world experience, premium components, and lifetime support.",
     'b1.title': 'True Energy Independence', 'b2.title': '7-Year Full Warranty',
     'b3.title': '99.9% System Uptime',      'b4.title': 'Smart Remote Monitoring',
     'b5.title': '100% Clean Energy',         'b6.title': 'Lifetime Technical Support',
     'b1.desc': 'Cut the grid permanently. Generate, store, and manage your own clean solar power with zero monthly utility bills or blackout risk.',
-    'b2.desc': 'Industry-leading 7-year comprehensive warranty covering all components — panels, batteries, inverters, wiring, and installation workmanship.',
+    'b2.desc': 'Industry-leading 7-year comprehensive warranty covering all components - panels, batteries, inverters, wiring, and installation workmanship.',
     'b3.desc': 'Redundant architecture and smart load management keeps your power on through cloudy days, nights, and seasonal variations.',
     'b4.desc': 'Real-time system telemetry from your smartphone. Track energy production, consumption, battery SOC, and receive alerts anywhere in the world.',
     'b5.desc': 'Zero emissions, zero noise, zero fuel costs. Drastically reduce your carbon footprint while achieving complete self-sufficiency.',
-    'b6.desc': 'Certified engineers available 24/7 for remote diagnostics, software updates, and emergency on-site service — worldwide coverage.',
+    'b6.desc': 'Certified engineers available 24/7 for remote diagnostics, software updates, and emergency on-site service - worldwide coverage.',
 
     // Metrics
     'metrics.s1.main': 'Systems Installed', 'metrics.s1.sub': 'Across 40+ Countries',
@@ -85,7 +85,7 @@ const T = {
 
     // Projects
     'proj.badge': 'Case Studies', 'proj.title1': 'FEATURED', 'proj.title2': 'PROJECTS',
-    'proj.sub': 'Real, already-installed off-grid systems. We build completely autonomous power for homes, factories, and water-pumping stations — programming and balancing the lithium batteries in-house, with 24/7 monitoring from a phone app.',
+    'proj.sub': 'Real, already-installed off-grid systems. We build completely autonomous power for homes, factories, and water-pumping stations - programming and balancing the lithium batteries in-house, with 24/7 monitoring from a phone app.',
     'proj.view-all': 'VIEW ALL CASE STUDIES',
     'proj.status.done': 'COMPLETED', 'proj.status.wip': 'IN PROGRESS', 'proj.status.flagship': 'FLAGSHIP',
     'proj.cat.res': 'RESIDENTIAL', 'proj.cat.agr': 'AGRICULTURAL', 'proj.cat.com': 'COMMERCIAL', 'proj.cat.resort': 'ISLAND RESORT',
@@ -94,38 +94,38 @@ const T = {
     'proj.tag.autonomous': 'Fully autonomous', 'proj.tag.nogrid': 'No grid needed', 'proj.tag.threephase': 'Three-phase',
     'proj.tag.pumps': 'Water pumps', 'proj.tag.lithium': 'Lithium storage',
     'proj1.title': 'Custom Lithium Battery Bank',
-    'proj1.desc': 'Hand-built LiFePO₄ bank with a programmable battery management system — cells balanced and charge parameters tuned on site, live state-of-charge on the display.',
+    'proj1.desc': 'Hand-built LiFePO₄ bank with a programmable battery management system - cells balanced and charge parameters tuned on site, live state-of-charge on the display.',
     'proj2.title': 'Home Hybrid Inverter',
-    'proj2.desc': 'Wall-mounted hybrid inverter wired and commissioned for fully autonomous off-grid operation — clean, labelled cabling built to last.',
+    'proj2.desc': 'Wall-mounted hybrid inverter wired and commissioned for fully autonomous off-grid operation - clean, labelled cabling built to last.',
     'proj3.title': 'Three-Phase Factory System',
-    'proj3.desc': 'Three-phase hybrid inverter powering a factory load off-grid — sized to run machinery and water pumps without the utility.',
+    'proj3.desc': 'Three-phase hybrid inverter powering a factory load off-grid - sized to run machinery and water pumps without the utility.',
     'proj4.title': 'Complete Off-Grid Power Room',
-    'proj4.desc': 'A turn-key installation: hybrid inverter and lithium battery storage assembled into one compact power room. Runs completely off-grid — no utility, no diesel — with the batteries programmed in-house and 24/7 monitoring from a phone app.',
+    'proj4.desc': 'A turn-key installation: hybrid inverter and lithium battery storage assembled into one compact power room. Runs completely off-grid - no utility, no diesel - with the batteries programmed in-house and 24/7 monitoring from a phone app.',
     'proj.cta.title1': 'WANT A SYSTEM LIKE', 'proj.cta.title2': 'THESE?',
     'proj.cta.sub': 'Every project starts with a free site analysis and custom design. Tell us about your location and energy needs.',
     'proj.view-systems': 'VIEW OUR SYSTEMS',
 
     // Process
     'proc.badge': 'Our Process', 'proc.title1': 'FROM ENQUIRY TO', 'proc.title2': 'ENERGY FREEDOM',
-    'proc.sub': 'A proven four-step process that takes you from first contact to a fully commissioned off-grid system — with zero stress.',
+    'proc.sub': 'A proven four-step process that takes you from first contact to a fully commissioned off-grid system - with zero stress.',
     'step1.title': 'Site Analysis',   'step2.title': 'Custom Design',
     'step3.title': 'Installation',    'step4.title': 'Monitor & Support',
     'step1.desc': 'We assess your location, sun hours, loads, and energy goals. Remote or on-site survey available worldwide.',
-    'step2.desc': 'Our engineers size every component — panels, battery, inverter — and produce a full electrical design with energy simulation.',
+    'step2.desc': 'Our engineers size every component - panels, battery, inverter - and produce a full electrical design with energy simulation.',
     'step3.desc': 'Certified technicians handle mounting, wiring, and commissioning to the highest safety standards. Typically 2–5 days on site.',
     'step4.desc': 'Remote monitoring, annual health checks, and 24/7 engineer support keep your system running at peak performance for decades.',
     'sol.cta.title1': 'NOT SURE WHICH SYSTEM IS', 'sol.cta.title2': 'RIGHT FOR YOU?',
-    'sol.cta.sub': 'Our engineers will analyse your site, usage patterns, and budget — then recommend the perfect system. Free of charge.',
+    'sol.cta.sub': 'Our engineers will analyse your site, usage patterns, and budget - then recommend the perfect system. Free of charge.',
 
     // Reviews
     'rev.badge': 'Client Reviews', 'rev.title1': 'WHAT OUR', 'rev.title2': 'CLIENTS SAY',
     'rev.sub': 'Real feedback from homeowners, farmers, and businesses who made the switch to autonomous solar power.',
-    'rev1.quote': "We've been 100% off-grid on our hillside home in Crete for over a year now. Not a single outage, even through the winter. The Victron system Off Grid installed handles everything automatically — we don't even think about power anymore. Best investment we've ever made in the property.",
-    'rev1.name': 'Nikos & Elena Papadakis', 'rev1.role': 'Private Villa — Crete, Greece',
+    'rev1.quote': "We've been 100% off-grid on our hillside home in Crete for over a year now. Not a single outage, even through the winter. The Victron system Off Grid installed handles everything automatically - we don't even think about power anymore. Best investment we've ever made in the property.",
+    'rev1.name': 'Nikos & Elena Papadakis', 'rev1.role': 'Private Villa - Crete, Greece',
     'rev2.quote': "We run our vineyard and olive grove completely off-grid. The AgroGrid system powers our irrigation pumps, cold storage, workshop, and family home without a hiccup. The three-phase output was critical for us. Off Grid Systems delivered exactly what they promised.",
-    'rev2.name': 'Andreas Georgiou', 'rev2.role': 'AgroGrid Elite — Paphos, Cyprus',
-    'rev3.quote': "Our seaside estate near Limassol had constant power cuts every summer. Off Grid Systems designed a full solar and battery setup that runs the entire property — pool, climate control, everything. We monitor every watt in real time from an app. A truly professional team.",
-    'rev3.name': 'Dmitry Volkov', 'rev3.role': 'Private Estate — Limassol, Cyprus',
+    'rev2.name': 'Andreas Georgiou', 'rev2.role': 'AgroGrid Elite - Paphos, Cyprus',
+    'rev3.quote': "Our seaside estate near Limassol had constant power cuts every summer. Off Grid Systems designed a full solar and battery setup that runs the entire property - pool, climate control, everything. We monitor every watt in real time from an app. A truly professional team.",
+    'rev3.name': 'Dmitry Volkov', 'rev3.role': 'Private Estate - Limassol, Cyprus',
     'rev.total': '200+ verified reviews',
     'rev.verified-google': 'Verified by Google', 'rev.verified-trustpilot': 'Verified by Trustpilot', 'rev.verified-clutch': 'Verified by Clutch',
 
@@ -133,11 +133,11 @@ const T = {
     'about.badge': 'Our Story', 'about.title1': 'ENGINEERING', 'about.title2': 'ENERGY FREEDOM', 'about.title3': 'SINCE 2010',
     'about.hero.sub': "Since 2010, we've deployed autonomous solar systems across the planet's most remote and demanding environments.",
     'about.p1': "Off Grid Systems was founded by a team of renewable energy engineers who believed that reliable, clean power shouldn't require proximity to a utility grid. We've spent over a decade designing and deploying autonomous solar PV systems across the planet's most remote and demanding environments.",
-    'about.p2': 'From alpine chalets in the Swiss Alps to agricultural estates in the Australian outback, from Saharan telecom towers to Pacific island eco-resorts — we\'ve proven that with the right engineering, solar energy can power anything, anywhere, anytime.',
+    'about.p2': 'From alpine chalets in the Swiss Alps to agricultural estates in the Australian outback, from Saharan telecom towers to Pacific island eco-resorts - we\'ve proven that with the right engineering, solar energy can power anything, anywhere, anytime.',
     'about.feat1.title': 'Tier-1 Components Only',
     'about.feat1.desc': "We specify only certified tier-1 panels, factory-authorised inverters, and proven lithium battery solutions from the world's leading manufacturers.",
     'about.feat2.title': 'Full Turnkey Delivery',
-    'about.feat2.desc': 'Site survey, energy analysis, custom system design, procurement, installation, commissioning, and long-term O&M — we own the whole process.',
+    'about.feat2.desc': 'Site survey, energy analysis, custom system design, procurement, installation, commissioning, and long-term O&M - we own the whole process.',
     'about.feat3.title': 'Global Reach, Local Expertise',
     'about.feat3.desc': 'Our certified partner network operates in 40+ countries, adapting every design to local climate, regulation, and grid interconnection standards.',
     'about.diag.title': 'Complete System Architecture',
@@ -153,7 +153,7 @@ const T = {
 
     // CTA
     'cta.badge': 'Free Consultation Available', 'cta.title1': 'READY TO GO', 'cta.title2': 'OFF THE GRID?',
-    'cta.sub': 'Join 500+ homes, farms, and businesses that have achieved complete energy independence. Our engineers will design your perfect system — at zero cost.',
+    'cta.sub': 'Join 500+ homes, farms, and businesses that have achieved complete energy independence. Our engineers will design your perfect system - at zero cost.',
     'cta.btn1': 'GET MY FREE QUOTE', 'cta.btn2': 'CALL AN ENGINEER NOW',
     'cta.note': 'Average response time: under 4 hours during business days',
 
@@ -168,7 +168,7 @@ const T = {
     'con.next.title': 'What Happens Next?',
     'con.next.s1': 'We review your project details and energy requirements within a few hours',
     'con.next.s2': 'A certified engineer contacts you within 24 hours for a free consultation',
-    'con.next.s3': 'Receive a custom system design, sizing report, and detailed quote — free',
+    'con.next.s3': 'Receive a custom system design, sizing report, and detailed quote - free',
     'f.name': 'Full Name', 'f.email': 'Email Address', 'f.phone': 'Phone Number',
     'f.location': 'Location / Country', 'f.message': 'Project Details', 'f.submit': 'SEND MY QUOTE REQUEST',
     'f.system.label': 'System Size / Interest',
@@ -181,7 +181,7 @@ const T = {
     'thanks.next.title': 'What Happens Next',
     'thanks.next.s1': 'Our team reviews your project details and energy requirements',
     'thanks.next.s2': 'A certified engineer calls you during working hours to discuss your needs',
-    'thanks.next.s3': 'You receive a custom system design and detailed quote — completely free',
+    'thanks.next.s3': 'You receive a custom system design and detailed quote - completely free',
     'thanks.home': 'Back to Home', 'thanks.solutions': 'Explore Solutions',
 
     // Footer
@@ -207,7 +207,7 @@ const T = {
     // Hero
     'hero.badge': 'Автономные Системы Солнечной Энергии',
     'hero.h1-1': 'ВАША ЭНЕРГИЯ', 'hero.h1-2': 'БЕЗ СЕТИ',
-    'hero.sub': 'Полные автономные фотоэлектрические системы, спроектированные для абсолютной надёжности — солнечные массивы, литиевые аккумуляторы и умные инверторы для истинной энергетической независимости.',
+    'hero.sub': 'Полные автономные фотоэлектрические системы, спроектированные для абсолютной надёжности - солнечные массивы, литиевые аккумуляторы и умные инверторы для истинной энергетической независимости.',
     'hero.cta1': 'БЕСПЛАТНОЕ ПРЕДЛОЖЕНИЕ', 'hero.cta2': 'НАШИ СИСТЕМЫ',
     'hero.s1': 'Установленных систем', 'hero.s2': 'Полная гарантия', 'hero.s3': 'Надёжность', 'hero.s4': 'Стран',
 
@@ -217,12 +217,12 @@ const T = {
     // Home overview
     'home.overview.title1': 'ВСЁ ЧТО ВАМ НУЖНО ДЛЯ',
     'home.overview.title2': 'ЭНЕРГЕТИЧЕСКОЙ НЕЗАВИСИМОСТИ',
-    'home.overview.sub': 'От отдельного домика до промышленного объекта — мы проектируем, устанавливаем и обслуживаем полную систему.',
+    'home.overview.sub': 'От отдельного домика до промышленного объекта - мы проектируем, устанавливаем и обслуживаем полную систему.',
     'home.card1.title': 'Наши системы',
     'home.card1.desc': 'Жилые, фермерские, дачные и коммерческие автономные решения, разработанные для вашего объекта.',
     'home.card1.link': 'СМОТРЕТЬ РЕШЕНИЯ',
     'home.card2.title': 'Примеры проектов',
-    'home.card2.desc': 'Реальные установки в 40+ странах — от альпийских вилл до тихоокеанских курортов.',
+    'home.card2.desc': 'Реальные установки в 40+ странах - от альпийских вилл до тихоокеанских курортов.',
     'home.card2.link': 'СМОТРЕТЬ ПРОЕКТЫ',
     'home.card3.title': 'О нас',
     'home.card3.desc': 'Инжиниринг энергетической свободы с 2010 года. Сертификат ISO, компоненты первого уровня, пожизненная поддержка.',
@@ -233,7 +233,7 @@ const T = {
 
     // Solutions
     'sol.badge': 'Наши системы', 'sol.title1': 'РЕШЕНИЯ ДЛЯ', 'sol.title2': 'АВТОНОМНОГО ПИТАНИЯ',
-    'sol.sub': 'Разработанные системы для любого применения — от удалённых горных убежищ до крупных коммерческих объектов.',
+    'sol.sub': 'Разработанные системы для любого применения - от удалённых горных убежищ до крупных коммерческих объектов.',
     'sol.popular': 'ПОПУЛЯРНЫЙ',
     'sol.get-quote': 'ЗАПРОСИТЬ ЦЕНУ',
     'sol1.cat': 'Жилые здания', 'sol1.name': 'HomeBase Pro',
@@ -257,16 +257,16 @@ const T = {
 
     // Why Us
     'why.badge': 'Почему выбирают нас', 'why.title1': 'ПРЕИМУЩЕСТВА', 'why.title2': 'АВТОНОМНОЙ ЭНЕРГЕТИКИ',
-    'why.sub': 'Мы не просто продаём солнечные панели. Мы проектируем полную энергетическую автономию — подкреплённую реальным опытом, премиальными компонентами и пожизненной поддержкой.',
+    'why.sub': 'Мы не просто продаём солнечные панели. Мы проектируем полную энергетическую автономию - подкреплённую реальным опытом, премиальными компонентами и пожизненной поддержкой.',
     'b1.title': 'Истинная энергетическая независимость', 'b2.title': 'Гарантия 7 лет',
     'b3.title': '99,9% время работы',                    'b4.title': 'Умный удалённый мониторинг',
     'b5.title': '100% чистая энергия',                   'b6.title': 'Пожизненная техническая поддержка',
     'b1.desc': 'Навсегда откажитесь от сети. Вырабатывайте, накапливайте и управляйте собственной чистой солнечной энергией без ежемесячных счетов.',
-    'b2.desc': 'Лидирующая в отрасли 7-летняя всеобъемлющая гарантия на все компоненты — панели, аккумуляторы, инверторы, проводку и монтаж.',
+    'b2.desc': 'Лидирующая в отрасли 7-летняя всеобъемлющая гарантия на все компоненты - панели, аккумуляторы, инверторы, проводку и монтаж.',
     'b3.desc': 'Резервируемая архитектура и интеллектуальное управление нагрузкой обеспечивают электроснабжение в облачные дни, ночью и в межсезонье.',
     'b4.desc': 'Телеметрия системы в реальном времени на вашем смартфоне. Отслеживайте выработку, потребление, заряд аккумулятора и получайте оповещения из любой точки мира.',
     'b5.desc': 'Нулевые выбросы, нулевой шум, нулевые затраты на топливо. Значительно сократите углеродный след, достигнув полной самодостаточности.',
-    'b6.desc': 'Сертифицированные инженеры доступны 24/7 для удалённой диагностики, обновлений программного обеспечения и аварийного выезда — мировое покрытие.',
+    'b6.desc': 'Сертифицированные инженеры доступны 24/7 для удалённой диагностики, обновлений программного обеспечения и аварийного выезда - мировое покрытие.',
 
     // Metrics
     'metrics.s1.main': 'Установленных систем', 'metrics.s1.sub': 'В 40+ странах',
@@ -276,7 +276,7 @@ const T = {
 
     // Projects
     'proj.badge': 'Примеры проектов', 'proj.title1': 'ИЗБРАННЫЕ', 'proj.title2': 'ПРОЕКТЫ',
-    'proj.sub': 'Реальные, уже установленные автономные системы. Мы создаём полностью автономное электроснабжение для домов, заводов и водонасосных станций — программируем и балансируем литиевые батареи собственными силами, с круглосуточным мониторингом через приложение.',
+    'proj.sub': 'Реальные, уже установленные автономные системы. Мы создаём полностью автономное электроснабжение для домов, заводов и водонасосных станций - программируем и балансируем литиевые батареи собственными силами, с круглосуточным мониторингом через приложение.',
     'proj.view-all': 'ВСЕ ПРОЕКТЫ',
     'proj.status.done': 'ЗАВЕРШЁН', 'proj.status.wip': 'В ПРОЦЕССЕ', 'proj.status.flagship': 'ФЛАГМАН',
     'proj.cat.res': 'ЖИЛОЙ', 'proj.cat.agr': 'СЕЛЬСКОХОЗЯЙСТВЕННЫЙ', 'proj.cat.com': 'КОММЕРЧЕСКИЙ', 'proj.cat.resort': 'ОСТРОВНОЙ КУРОРТ',
@@ -285,38 +285,38 @@ const T = {
     'proj.tag.autonomous': 'Полная автономия', 'proj.tag.nogrid': 'Без сети', 'proj.tag.threephase': 'Трёхфазный',
     'proj.tag.pumps': 'Водяные насосы', 'proj.tag.lithium': 'Литиевый накопитель',
     'proj1.title': 'Литиевый аккумуляторный банк на заказ',
-    'proj1.desc': 'Собранный вручную банк LiFePO₄ с программируемой системой управления — ячейки сбалансированы, параметры заряда настроены на месте, уровень заряда виден на дисплее.',
+    'proj1.desc': 'Собранный вручную банк LiFePO₄ с программируемой системой управления - ячейки сбалансированы, параметры заряда настроены на месте, уровень заряда виден на дисплее.',
     'proj2.title': 'Домашний гибридный инвертор',
-    'proj2.desc': 'Настенный гибридный инвертор, смонтированный и введённый в эксплуатацию для полностью автономной работы — аккуратная, промаркированная проводка.',
+    'proj2.desc': 'Настенный гибридный инвертор, смонтированный и введённый в эксплуатацию для полностью автономной работы - аккуратная, промаркированная проводка.',
     'proj3.title': 'Трёхфазная система для завода',
-    'proj3.desc': 'Трёхфазный гибридный инвертор, питающий заводскую нагрузку в автономном режиме — рассчитан на работу оборудования и водяных насосов без сети.',
+    'proj3.desc': 'Трёхфазный гибридный инвертор, питающий заводскую нагрузку в автономном режиме - рассчитан на работу оборудования и водяных насосов без сети.',
     'proj4.title': 'Готовая автономная электростанция',
-    'proj4.desc': 'Установка «под ключ»: гибридный инвертор и литиевый накопитель в одной компактной электростанции. Полностью автономная работа — без сети и дизеля — с программированием батарей собственными силами и круглосуточным мониторингом через приложение.',
+    'proj4.desc': 'Установка «под ключ»: гибридный инвертор и литиевый накопитель в одной компактной электростанции. Полностью автономная работа - без сети и дизеля - с программированием батарей собственными силами и круглосуточным мониторингом через приложение.',
     'proj.cta.title1': 'ХОТИТЕ ТАКУЮ ЖЕ', 'proj.cta.title2': 'СИСТЕМУ?',
     'proj.cta.sub': 'Каждый проект начинается с бесплатного анализа объекта и индивидуального проекта. Расскажите о вашей локации и потребностях.',
     'proj.view-systems': 'НАШИ СИСТЕМЫ',
 
     // Process
     'proc.badge': 'Наш процесс', 'proc.title1': 'ОТ ЗАПРОСА К', 'proc.title2': 'ЭНЕРГЕТИЧЕСКОЙ СВОБОДЕ',
-    'proc.sub': 'Проверенный четырёхэтапный процесс: от первого контакта до полностью введённой в эксплуатацию автономной системы — без стресса.',
+    'proc.sub': 'Проверенный четырёхэтапный процесс: от первого контакта до полностью введённой в эксплуатацию автономной системы - без стресса.',
     'step1.title': 'Анализ объекта', 'step2.title': 'Индивидуальный проект',
     'step3.title': 'Монтаж',         'step4.title': 'Мониторинг и поддержка',
     'step1.desc': 'Мы оцениваем ваше местоположение, солнечные часы, нагрузки и цели. Дистанционное или выездное обследование по всему миру.',
-    'step2.desc': 'Наши инженеры подбирают каждый компонент — панели, аккумулятор, инвертор — и составляют полный электрический проект с энергетическим моделированием.',
+    'step2.desc': 'Наши инженеры подбирают каждый компонент - панели, аккумулятор, инвертор - и составляют полный электрический проект с энергетическим моделированием.',
     'step3.desc': 'Сертифицированные специалисты выполняют монтаж, проводку и ввод в эксплуатацию по высочайшим стандартам безопасности. Обычно 2–5 дней на объекте.',
     'step4.desc': 'Удалённый мониторинг, ежегодные проверки и поддержка инженеров 24/7 обеспечивают максимальную производительность системы на протяжении десятилетий.',
     'sol.cta.title1': 'НЕ УВЕРЕНЫ, КАКАЯ СИСТЕМА', 'sol.cta.title2': 'ВАМ ПОДХОДИТ?',
-    'sol.cta.sub': 'Наши инженеры проанализируют ваш объект, режим потребления и бюджет — затем порекомендуют идеальную систему. Бесплатно.',
+    'sol.cta.sub': 'Наши инженеры проанализируют ваш объект, режим потребления и бюджет - затем порекомендуют идеальную систему. Бесплатно.',
 
     // Reviews
     'rev.badge': 'Отзывы клиентов', 'rev.title1': 'ЧТО ГОВОРЯТ', 'rev.title2': 'НАШИ КЛИЕНТЫ',
     'rev.sub': 'Реальные отзывы домовладельцев, фермеров и компаний, перешедших на автономную солнечную энергию.',
-    'rev1.quote': 'Мы живём полностью автономно в нашем доме на склоне холма на Крите уже больше года. Ни одного отключения, даже зимой. Система Victron управляет всем автоматически — мы вообще не думаем об электричестве. Лучшая инвестиция в нашу недвижимость.',
-    'rev1.name': 'Никос и Елена Пападакис', 'rev1.role': 'Частная вилла — Крит, Греция',
+    'rev1.quote': 'Мы живём полностью автономно в нашем доме на склоне холма на Крите уже больше года. Ни одного отключения, даже зимой. Система Victron управляет всем автоматически - мы вообще не думаем об электричестве. Лучшая инвестиция в нашу недвижимость.',
+    'rev1.name': 'Никос и Елена Пападакис', 'rev1.role': 'Частная вилла - Крит, Греция',
     'rev2.quote': 'Мы управляем виноградником и оливковой рощей полностью в автономном режиме. Система AgroGrid питает ирригационные насосы, холодильные склады, мастерскую и семейный дом без сбоев. Трёхфазный выход был критически важен для нас. Off Grid Systems выполнили всё, что обещали.',
-    'rev2.name': 'Андреас Георгиу', 'rev2.role': 'AgroGrid Elite — Пафос, Кипр',
-    'rev3.quote': 'На нашем поместье у моря рядом с Лимассолом каждое лето постоянно отключали электричество. Off Grid Systems спроектировали полную систему на солнечных панелях и аккумуляторах, которая питает всю территорию — бассейн, климат-контроль, всё. Мы отслеживаем каждый ватт в реальном времени через приложение. По-настоящему профессиональная команда.',
-    'rev3.name': 'Дмитрий Волков', 'rev3.role': 'Частное поместье — Лимассол, Кипр',
+    'rev2.name': 'Андреас Георгиу', 'rev2.role': 'AgroGrid Elite - Пафос, Кипр',
+    'rev3.quote': 'На нашем поместье у моря рядом с Лимассолом каждое лето постоянно отключали электричество. Off Grid Systems спроектировали полную систему на солнечных панелях и аккумуляторах, которая питает всю территорию - бассейн, климат-контроль, всё. Мы отслеживаем каждый ватт в реальном времени через приложение. По-настоящему профессиональная команда.',
+    'rev3.name': 'Дмитрий Волков', 'rev3.role': 'Частное поместье - Лимассол, Кипр',
     'rev.total': '200+ проверенных отзывов',
     'rev.verified-google': 'Подтверждено Google', 'rev.verified-trustpilot': 'Подтверждено Trustpilot', 'rev.verified-clutch': 'Подтверждено Clutch',
 
@@ -324,11 +324,11 @@ const T = {
     'about.badge': 'Наша история', 'about.title1': 'ИНЖИНИРИНГ', 'about.title2': 'ЭНЕРГЕТИЧЕСКОЙ СВОБОДЫ', 'about.title3': 'С 2010 ГОДА',
     'about.hero.sub': 'С 2010 года мы внедряем автономные солнечные системы в самых отдалённых и сложных условиях планеты.',
     'about.p1': 'Off Grid Systems была основана командой инженеров возобновляемой энергетики, убеждённых, что надёжное, чистое электроснабжение не должно зависеть от централизованной сети. Мы провели более десяти лет, проектируя и внедряя автономные солнечные фотоэлектрические системы в самых отдалённых условиях планеты.',
-    'about.p2': 'От альпийских шале в Швейцарских Альпах до сельскохозяйственных угодий в австралийском аутбэке, от телекоммуникационных башен в Сахаре до тихоокеанских эко-курортов — мы доказали, что при правильном инжиниринге солнечная энергия может питать всё, везде и всегда.',
+    'about.p2': 'От альпийских шале в Швейцарских Альпах до сельскохозяйственных угодий в австралийском аутбэке, от телекоммуникационных башен в Сахаре до тихоокеанских эко-курортов - мы доказали, что при правильном инжиниринге солнечная энергия может питать всё, везде и всегда.',
     'about.feat1.title': 'Только компоненты первого уровня',
     'about.feat1.desc': 'Мы используем только сертифицированные панели первого уровня, заводские инверторы и проверенные решения литиевых аккумуляторов от ведущих мировых производителей.',
     'about.feat2.title': 'Полный цикл работ под ключ',
-    'about.feat2.desc': 'Обследование объекта, энергетический анализ, индивидуальный проект, закупка, монтаж, ввод в эксплуатацию и долгосрочное обслуживание — мы контролируем весь процесс.',
+    'about.feat2.desc': 'Обследование объекта, энергетический анализ, индивидуальный проект, закупка, монтаж, ввод в эксплуатацию и долгосрочное обслуживание - мы контролируем весь процесс.',
     'about.feat3.title': 'Глобальный охват, местная экспертиза',
     'about.feat3.desc': 'Наша сеть сертифицированных партнёров работает в 40+ странах, адаптируя каждый проект к местному климату, нормативам и стандартам подключения.',
     'about.diag.title': 'Архитектура полной системы',
@@ -344,7 +344,7 @@ const T = {
 
     // CTA
     'cta.badge': 'Бесплатная консультация', 'cta.title1': 'ГОТОВЫ СТАТЬ', 'cta.title2': 'НЕЗАВИСИМЫМИ?',
-    'cta.sub': 'Присоединяйтесь к 500+ домам, фермам и компаниям, достигшим полной энергетической независимости. Наши инженеры разработают для вас идеальную систему — бесплатно.',
+    'cta.sub': 'Присоединяйтесь к 500+ домам, фермам и компаниям, достигшим полной энергетической независимости. Наши инженеры разработают для вас идеальную систему - бесплатно.',
     'cta.btn1': 'ПОЛУЧИТЬ МОЁ ПРЕДЛОЖЕНИЕ', 'cta.btn2': 'ПОЗВОНИТЕ ИНЖЕНЕРУ',
     'cta.note': 'Среднее время ответа: менее 4 часов в рабочие дни',
 
@@ -359,7 +359,7 @@ const T = {
     'con.next.title': 'Что происходит дальше?',
     'con.next.s1': 'Мы рассматриваем детали вашего проекта и энергетические потребности в течение нескольких часов',
     'con.next.s2': 'Сертифицированный инженер свяжется с вами в течение 24 часов для бесплатной консультации',
-    'con.next.s3': 'Вы получаете индивидуальный проект системы, отчёт по мощности и детальное предложение — бесплатно',
+    'con.next.s3': 'Вы получаете индивидуальный проект системы, отчёт по мощности и детальное предложение - бесплатно',
     'f.name': 'Имя и фамилия', 'f.email': 'Email адрес', 'f.phone': 'Номер телефона',
     'f.location': 'Местоположение / Страна', 'f.message': 'Детали проекта', 'f.submit': 'ОТПРАВИТЬ МОЙ ЗАПРОС',
     'f.system.label': 'Тип и размер системы',
@@ -372,7 +372,7 @@ const T = {
     'thanks.next.title': 'Что происходит дальше',
     'thanks.next.s1': 'Наша команда рассматривает детали вашего проекта и энергетические потребности',
     'thanks.next.s2': 'Сертифицированный инженер звонит вам в рабочее время, чтобы обсудить ваши потребности',
-    'thanks.next.s3': 'Вы получаете индивидуальный проект системы и детальное предложение — совершенно бесплатно',
+    'thanks.next.s3': 'Вы получаете индивидуальный проект системы и детальное предложение - совершенно бесплатно',
     'thanks.home': 'На главную', 'thanks.solutions': 'Наши решения',
 
     // Footer
@@ -398,7 +398,7 @@ const T = {
     // Hero
     'hero.badge': 'Αυτόνομα Ηλιακά Συστήματα Ενέργειας',
     'hero.h1-1': 'ΕΝΕΡΓΟΠΟΙΗΣΤΕ ΤΟΝ ΚΟΣΜΟ ΣΑΣ', 'hero.h1-2': 'ΕΚΤΟΣ ΔΙΚΤΥΟΥ',
-    'hero.sub': 'Πλήρη αυτόνομα φωτοβολταϊκά συστήματα σχεδιασμένα για απόλυτη αξιοπιστία — ηλιακές διατάξεις, αποθήκευση λιθίου και έξυπνοι μετατροπείς για πραγματική ενεργειακή ανεξαρτησία.',
+    'hero.sub': 'Πλήρη αυτόνομα φωτοβολταϊκά συστήματα σχεδιασμένα για απόλυτη αξιοπιστία - ηλιακές διατάξεις, αποθήκευση λιθίου και έξυπνοι μετατροπείς για πραγματική ενεργειακή ανεξαρτησία.',
     'hero.cta1': 'ΔΩΡΕΑΝ ΠΡΟΣΦΟΡΑ', 'hero.cta2': 'ΤΑ ΣΥΣΤΗΜΑΤΑ ΜΑΣ',
     'hero.s1': 'Εγκαταστάσεις', 'hero.s2': 'Πλήρης Εγγύηση', 'hero.s3': 'Διαθεσιμότητα', 'hero.s4': 'Χώρες',
 
@@ -408,12 +408,12 @@ const T = {
     // Home overview
     'home.overview.title1': 'ΟΛΑ ΟΣΑ ΧΡΕΙΑΖΕΣΤΕ ΓΙΑ',
     'home.overview.title2': 'ΕΝΕΡΓΕΙΑΚΗ ΑΝΕΞΑΡΤΗΣΙΑ',
-    'home.overview.sub': 'Από ένα μοναδικό εξοχικό έως βιομηχανικό χώρο — σχεδιάζουμε, εγκαθιστούμε και υποστηρίζουμε το πλήρες σύστημα.',
+    'home.overview.sub': 'Από ένα μοναδικό εξοχικό έως βιομηχανικό χώρο - σχεδιάζουμε, εγκαθιστούμε και υποστηρίζουμε το πλήρες σύστημα.',
     'home.card1.title': 'Τα Συστήματά μας',
     'home.card1.desc': 'Οικιστικές, αγροτικές, εξοχικές και εμπορικές αυτόνομες λύσεις σχεδιασμένες για τον χώρο σας.',
     'home.card1.link': 'ΔΕΙΤΕ ΤΙΣ ΛΥΣΕΙΣ',
     'home.card2.title': 'Μελέτες Περίπτωσης',
-    'home.card2.desc': 'Πραγματικές εγκαταστάσεις σε 40+ χώρες — από αλπικές βίλες έως θέρετρα του Ειρηνικού.',
+    'home.card2.desc': 'Πραγματικές εγκαταστάσεις σε 40+ χώρες - από αλπικές βίλες έως θέρετρα του Ειρηνικού.',
     'home.card2.link': 'ΔΕΙΤΕ ΤΑ ΕΡΓΑ',
     'home.card3.title': 'Σχετικά με εμάς',
     'home.card3.desc': 'Μηχανική ενεργειακής ελευθερίας από το 2010. Πιστοποίηση ISO, εξαρτήματα επιπέδου 1, υποστήριξη δια βίου.',
@@ -424,7 +424,7 @@ const T = {
 
     // Solutions
     'sol.badge': 'Τα Συστήματά μας', 'sol.title1': 'ΛΥΣΕΙΣ', 'sol.title2': 'ΑΥΤΟΝΟΜΗΣ ΕΝΕΡΓΕΙΑΣ',
-    'sol.sub': 'Συστήματα σχεδιασμένα για κάθε εφαρμογή — από απομακρυσμένες ορεινές κατοικίες έως μεγάλες εμπορικές εγκαταστάσεις.',
+    'sol.sub': 'Συστήματα σχεδιασμένα για κάθε εφαρμογή - από απομακρυσμένες ορεινές κατοικίες έως μεγάλες εμπορικές εγκαταστάσεις.',
     'sol.popular': 'ΔΗΜΟΦΙΛΕΣ',
     'sol.get-quote': 'ΑΙΤΗΣΗ ΤΙΜΗΣ',
     'sol1.cat': 'Κατοικία', 'sol1.name': 'HomeBase Pro',
@@ -448,16 +448,16 @@ const T = {
 
     // Why Us
     'why.badge': 'Γιατί να μας επιλέξετε', 'why.title1': 'ΤΑ ΠΛΕΟΝΕΚΤΗΜΑΤΑ', 'why.title2': 'ΜΑΣ',
-    'why.sub': 'Δεν πουλάμε απλώς ηλιακά πάνελ. Σχεδιάζουμε πλήρη ενεργειακή αυτονομία — με εμπειρία, κορυφαία εξαρτήματα και υποστήριξη για πάντα.',
+    'why.sub': 'Δεν πουλάμε απλώς ηλιακά πάνελ. Σχεδιάζουμε πλήρη ενεργειακή αυτονομία - με εμπειρία, κορυφαία εξαρτήματα και υποστήριξη για πάντα.',
     'b1.title': 'Πραγματική Ενεργειακή Ανεξαρτησία', 'b2.title': 'Εγγύηση 7 Ετών',
     'b3.title': 'Διαθεσιμότητα 99,9%',                'b4.title': 'Έξυπνη Τηλεπαρακολούθηση',
     'b5.title': '100% Καθαρή Ενέργεια',               'b6.title': 'Δια Βίου Τεχνική Υποστήριξη',
     'b1.desc': 'Αποκοπείτε οριστικά από το δίκτυο. Παράγετε, αποθηκεύετε και διαχειρίζεστε τη δική σας καθαρή ηλιακή ενέργεια χωρίς μηνιαίους λογαριασμούς.',
-    'b2.desc': 'Κορυφαία 7-ετής συνολική εγγύηση που καλύπτει όλα τα εξαρτήματα — πάνελ, μπαταρίες, μετατροπείς, καλωδίωση και εγκατάσταση.',
+    'b2.desc': 'Κορυφαία 7-ετής συνολική εγγύηση που καλύπτει όλα τα εξαρτήματα - πάνελ, μπαταρίες, μετατροπείς, καλωδίωση και εγκατάσταση.',
     'b3.desc': 'Πλεονάζουσα αρχιτεκτονική και έξυπνη διαχείριση φορτίου διατηρούν την ισχύ σας σε συννεφιασμένες μέρες, νύχτες και εποχιακές διακυμάνσεις.',
     'b4.desc': 'Τηλεμετρία συστήματος σε πραγματικό χρόνο στο smartphone σας. Παρακολουθήστε παραγωγή, κατανάλωση, φόρτιση μπαταρίας και λάβετε ειδοποιήσεις από οπουδήποτε.',
     'b5.desc': 'Μηδέν εκπομπές, μηδέν θόρυβος, μηδέν κόστος καυσίμων. Μειώστε δραστικά το αποτύπωμα άνθρακα ενώ επιτυγχάνετε πλήρη αυτάρκεια.',
-    'b6.desc': 'Πιστοποιημένοι μηχανικοί διαθέσιμοι 24/7 για απομακρυσμένη διάγνωση, ενημερώσεις λογισμικού και επείγουσα επιτόπια εξυπηρέτηση — παγκόσμια κάλυψη.',
+    'b6.desc': 'Πιστοποιημένοι μηχανικοί διαθέσιμοι 24/7 για απομακρυσμένη διάγνωση, ενημερώσεις λογισμικού και επείγουσα επιτόπια εξυπηρέτηση - παγκόσμια κάλυψη.',
 
     // Metrics
     'metrics.s1.main': 'Εγκατεστημένα Συστήματα', 'metrics.s1.sub': 'Σε 40+ Χώρες',
@@ -467,7 +467,7 @@ const T = {
 
     // Projects
     'proj.badge': 'Μελέτες Περίπτωσης', 'proj.title1': 'ΕΠΙΛΕΓΜΕΝΑ', 'proj.title2': 'ΕΡΓΑ',
-    'proj.sub': 'Πραγματικά, ήδη εγκατεστημένα αυτόνομα συστήματα. Κατασκευάζουμε πλήρως αυτόνομη ενέργεια για κατοικίες, εργοστάσια και αντλιοστάσια νερού — προγραμματίζουμε και εξισορροπούμε τις μπαταρίες λιθίου εσωτερικά, με 24/7 παρακολούθηση από εφαρμογή κινητού.',
+    'proj.sub': 'Πραγματικά, ήδη εγκατεστημένα αυτόνομα συστήματα. Κατασκευάζουμε πλήρως αυτόνομη ενέργεια για κατοικίες, εργοστάσια και αντλιοστάσια νερού - προγραμματίζουμε και εξισορροπούμε τις μπαταρίες λιθίου εσωτερικά, με 24/7 παρακολούθηση από εφαρμογή κινητού.',
     'proj.view-all': 'ΟΛΑ ΤΑ ΕΡΓΑ',
     'proj.status.done': 'ΟΛΟΚΛΗΡΩΘΗΚΕ', 'proj.status.wip': 'ΣΕ ΕΞΕΛΙΞΗ', 'proj.status.flagship': 'ΕΜΒΛΗΜΑΤΙΚΟ',
     'proj.cat.res': 'ΚΑΤΟΙΚΙΑ', 'proj.cat.agr': 'ΑΓΡΟΤΙΚΟ', 'proj.cat.com': 'ΕΜΠΟΡΙΚΟ', 'proj.cat.resort': 'ΝΗΣΙΩΤΙΚΟ ΘΕΡΕΤΡΟ',
@@ -476,38 +476,38 @@ const T = {
     'proj.tag.autonomous': 'Πλήρως αυτόνομο', 'proj.tag.nogrid': 'Χωρίς δίκτυο', 'proj.tag.threephase': 'Τριφασικό',
     'proj.tag.pumps': 'Αντλίες νερού', 'proj.tag.lithium': 'Αποθήκευση λιθίου',
     'proj1.title': 'Τράπεζα Μπαταριών Λιθίου κατά Παραγγελία',
-    'proj1.desc': 'Χειροποίητη τράπεζα LiFePO₄ με προγραμματιζόμενο σύστημα διαχείρισης — οι κυψέλες εξισορροπημένες, οι παράμετροι φόρτισης ρυθμισμένες επί τόπου, με ζωντανή ένδειξη φόρτισης στην οθόνη.',
+    'proj1.desc': 'Χειροποίητη τράπεζα LiFePO₄ με προγραμματιζόμενο σύστημα διαχείρισης - οι κυψέλες εξισορροπημένες, οι παράμετροι φόρτισης ρυθμισμένες επί τόπου, με ζωντανή ένδειξη φόρτισης στην οθόνη.',
     'proj2.title': 'Οικιακός Υβριδικός Inverter',
-    'proj2.desc': 'Επιτοίχιος υβριδικός inverter, συνδεδεμένος και σε λειτουργία για πλήρως αυτόνομη λειτουργία εκτός δικτύου — καθαρή, επισημασμένη καλωδίωση.',
+    'proj2.desc': 'Επιτοίχιος υβριδικός inverter, συνδεδεμένος και σε λειτουργία για πλήρως αυτόνομη λειτουργία εκτός δικτύου - καθαρή, επισημασμένη καλωδίωση.',
     'proj3.title': 'Τριφασικό Σύστημα Εργοστασίου',
-    'proj3.desc': 'Τριφασικός υβριδικός inverter που τροφοδοτεί φορτίο εργοστασίου εκτός δικτύου — διαστασιολογημένος για μηχανήματα και αντλίες νερού χωρίς το δίκτυο.',
+    'proj3.desc': 'Τριφασικός υβριδικός inverter που τροφοδοτεί φορτίο εργοστασίου εκτός δικτύου - διαστασιολογημένος για μηχανήματα και αντλίες νερού χωρίς το δίκτυο.',
     'proj4.title': 'Πλήρες Αυτόνομο Ενεργειακό Δωμάτιο',
-    'proj4.desc': 'Εγκατάσταση με το κλειδί στο χέρι: υβριδικός inverter και αποθήκευση μπαταριών λιθίου σε ένα συμπαγές ενεργειακό δωμάτιο. Λειτουργεί πλήρως εκτός δικτύου — χωρίς δίκτυο, χωρίς ντίζελ — με προγραμματισμό μπαταριών εσωτερικά και 24/7 παρακολούθηση από εφαρμογή.',
+    'proj4.desc': 'Εγκατάσταση με το κλειδί στο χέρι: υβριδικός inverter και αποθήκευση μπαταριών λιθίου σε ένα συμπαγές ενεργειακό δωμάτιο. Λειτουργεί πλήρως εκτός δικτύου - χωρίς δίκτυο, χωρίς ντίζελ - με προγραμματισμό μπαταριών εσωτερικά και 24/7 παρακολούθηση από εφαρμογή.',
     'proj.cta.title1': 'ΘΕΛΕΤΕ ΕΝΑ ΤΕΤΟΙΟ', 'proj.cta.title2': 'ΣΥΣΤΗΜΑ;',
     'proj.cta.sub': 'Κάθε έργο ξεκινά με δωρεάν ανάλυση τοποθεσίας και εξατομικευμένο σχεδιασμό. Πείτε μας για την τοποθεσία και τις ανάγκες σας.',
     'proj.view-systems': 'ΤΑ ΣΥΣΤΗΜΑΤΑ ΜΑΣ',
 
     // Process
     'proc.badge': 'Η Διαδικασία μας', 'proc.title1': 'ΑΠΟ ΤΗΝ ΑΙΤΗΣΗ ΣΤΗ', 'proc.title2': 'ΕΝΕΡΓΕΙΑΚΗ ΕΛΕΥΘΕΡΙΑ',
-    'proc.sub': 'Μια αποδεδειγμένη τετραβηματική διαδικασία που σας μεταφέρει από την πρώτη επαφή σε ένα πλήρως λειτουργικό σύστημα — χωρίς άγχος.',
+    'proc.sub': 'Μια αποδεδειγμένη τετραβηματική διαδικασία που σας μεταφέρει από την πρώτη επαφή σε ένα πλήρως λειτουργικό σύστημα - χωρίς άγχος.',
     'step1.title': 'Ανάλυση Τοποθεσίας', 'step2.title': 'Εξατομικευμένος Σχεδιασμός',
     'step3.title': 'Εγκατάσταση',         'step4.title': 'Παρακολούθηση & Υποστήριξη',
     'step1.desc': 'Αξιολογούμε τη θέση σας, τις ηλιακές ώρες, τα φορτία και τους ενεργειακούς στόχους σας. Διαθέσιμη απομακρυσμένη ή επιτόπια έρευνα παγκοσμίως.',
-    'step2.desc': 'Οι μηχανικοί μας διαστασιολογούν κάθε εξάρτημα — πάνελ, μπαταρία, μετατροπέα — και παράγουν πλήρη ηλεκτρολογική μελέτη με ενεργειακή προσομοίωση.',
+    'step2.desc': 'Οι μηχανικοί μας διαστασιολογούν κάθε εξάρτημα - πάνελ, μπαταρία, μετατροπέα - και παράγουν πλήρη ηλεκτρολογική μελέτη με ενεργειακή προσομοίωση.',
     'step3.desc': 'Πιστοποιημένοι τεχνικοί αναλαμβάνουν τη στήριξη, καλωδίωση και θέση σε λειτουργία σύμφωνα με τα υψηλότερα πρότυπα ασφαλείας. Συνήθως 2–5 ημέρες στο χώρο.',
     'step4.desc': 'Απομακρυσμένη παρακολούθηση, ετήσιοι έλεγχοι και υποστήριξη μηχανικών 24/7 διατηρούν το σύστημά σας σε κορυφαία απόδοση για δεκαετίες.',
     'sol.cta.title1': 'ΔΕΝ ΕΙΣΤΕ ΣΙΓΟΥΡΟΙ ΠΟΙΟ ΣΥΣΤΗΜΑ', 'sol.cta.title2': 'ΕΙΝΑΙ ΤΟ ΚΑΤΑΛΛΗΛΟ;',
-    'sol.cta.sub': 'Οι μηχανικοί μας θα αναλύσουν τον χώρο, τις συνήθειες κατανάλωσης και τον προϋπολογισμό σας — και θα προτείνουν το ιδανικό σύστημα. Δωρεάν.',
+    'sol.cta.sub': 'Οι μηχανικοί μας θα αναλύσουν τον χώρο, τις συνήθειες κατανάλωσης και τον προϋπολογισμό σας - και θα προτείνουν το ιδανικό σύστημα. Δωρεάν.',
 
     // Reviews
     'rev.badge': 'Αξιολογήσεις Πελατών', 'rev.title1': 'ΤΙ ΛΕΝΕ', 'rev.title2': 'ΟΙ ΠΕΛΑΤΕΣ ΜΑΣ',
     'rev.sub': 'Πραγματικές κριτικές από ιδιοκτήτες σπιτιών, αγρότες και επιχειρήσεις που μεταπήδησαν στην αυτόνομη ηλιακή ενέργεια.',
-    'rev1.quote': 'Ζούμε 100% αυτόνομα στο σπίτι μας στην πλαγιά της Κρήτης για πάνω από έναν χρόνο. Ούτε μία διακοπή ρεύματος, ακόμη και τον χειμώνα. Το σύστημα Victron χειρίζεται τα πάντα αυτόματα — δεν σκεφτόμαστε καν την ενέργεια πια. Η καλύτερη επένδυση στην ιδιοκτησία μας.',
-    'rev1.name': 'Νίκος & Έλενα Παπαδάκη', 'rev1.role': 'Ιδιωτική βίλα — Κρήτη, Ελλάδα',
+    'rev1.quote': 'Ζούμε 100% αυτόνομα στο σπίτι μας στην πλαγιά της Κρήτης για πάνω από έναν χρόνο. Ούτε μία διακοπή ρεύματος, ακόμη και τον χειμώνα. Το σύστημα Victron χειρίζεται τα πάντα αυτόματα - δεν σκεφτόμαστε καν την ενέργεια πια. Η καλύτερη επένδυση στην ιδιοκτησία μας.',
+    'rev1.name': 'Νίκος & Έλενα Παπαδάκη', 'rev1.role': 'Ιδιωτική βίλα - Κρήτη, Ελλάδα',
     'rev2.quote': 'Διαχειριζόμαστε τον αμπελώνα και τον ελαιώνα μας εξ ολοκλήρου αυτόνομα. Το σύστημα AgroGrid τροφοδοτεί αντλίες άρδευσης, ψυκτικές αποθήκες, εργαστήριο και οικογενειακό σπίτι χωρίς πρόβλημα. Η τριφασική έξοδος ήταν κρίσιμη για εμάς. Η Off Grid Systems παρέδωσε ακριβώς ό,τι υποσχέθηκε.',
-    'rev2.name': 'Ανδρέας Γεωργίου', 'rev2.role': 'AgroGrid Elite — Πάφος, Κύπρος',
-    'rev3.quote': 'Το παραθαλάσσιο κτήμα μας κοντά στη Λεμεσό είχε συνεχείς διακοπές ρεύματος κάθε καλοκαίρι. Η Off Grid Systems σχεδίασε ένα πλήρες σύστημα ηλιακής ενέργειας και μπαταριών που τροφοδοτεί ολόκληρη την ιδιοκτησία — πισίνα, κλιματισμό, τα πάντα. Παρακολουθούμε κάθε watt σε πραγματικό χρόνο από μια εφαρμογή. Πραγματικά επαγγελματική ομάδα.',
-    'rev3.name': 'Ντμίτρι Βόλκοφ', 'rev3.role': 'Ιδιωτικό κτήμα — Λεμεσός, Κύπρος',
+    'rev2.name': 'Ανδρέας Γεωργίου', 'rev2.role': 'AgroGrid Elite - Πάφος, Κύπρος',
+    'rev3.quote': 'Το παραθαλάσσιο κτήμα μας κοντά στη Λεμεσό είχε συνεχείς διακοπές ρεύματος κάθε καλοκαίρι. Η Off Grid Systems σχεδίασε ένα πλήρες σύστημα ηλιακής ενέργειας και μπαταριών που τροφοδοτεί ολόκληρη την ιδιοκτησία - πισίνα, κλιματισμό, τα πάντα. Παρακολουθούμε κάθε watt σε πραγματικό χρόνο από μια εφαρμογή. Πραγματικά επαγγελματική ομάδα.',
+    'rev3.name': 'Ντμίτρι Βόλκοφ', 'rev3.role': 'Ιδιωτικό κτήμα - Λεμεσός, Κύπρος',
     'rev.total': '200+ επαληθευμένες αξιολογήσεις',
     'rev.verified-google': 'Επαληθεύτηκε από Google', 'rev.verified-trustpilot': 'Επαληθεύτηκε από Trustpilot', 'rev.verified-clutch': 'Επαληθεύτηκε από Clutch',
 
@@ -515,11 +515,11 @@ const T = {
     'about.badge': 'Η Ιστορία μας', 'about.title1': 'ΜΗΧΑΝΙΚΗ', 'about.title2': 'ΕΝΕΡΓΕΙΑΚΗΣ ΕΛΕΥΘΕΡΙΑΣ', 'about.title3': 'ΑΠΟ ΤΟ 2010',
     'about.hero.sub': 'Από το 2010, αναπτύσσουμε αυτόνομα ηλιακά συστήματα στα πιο απομακρυσμένα και απαιτητικά περιβάλλοντα του πλανήτη.',
     'about.p1': 'Η Off Grid Systems ιδρύθηκε από ομάδα μηχανικών ανανεώσιμης ενέργειας που πίστευαν ότι η αξιόπιστη, καθαρή ενέργεια δεν πρέπει να εξαρτάται από την εγγύτητα στο δίκτυο. Αφιερώσαμε πάνω από μια δεκαετία σχεδιάζοντας και αναπτύσσοντας αυτόνομα ηλιακά φωτοβολταϊκά συστήματα στα πιο απομακρυσμένα περιβάλλοντα του πλανήτη.',
-    'about.p2': 'Από αλπικά σαλέ στις Ελβετικές Άλπεις έως αγροτικές κτήσεις στο αυστραλιανό outback, από πύργους τηλεπικοινωνιών στη Σαχάρα έως οικολογικά θέρετρα στον Ειρηνικό — έχουμε αποδείξει ότι με τη σωστή μηχανική, η ηλιακή ενέργεια μπορεί να τροφοδοτήσει τα πάντα, παντού, πάντα.',
+    'about.p2': 'Από αλπικά σαλέ στις Ελβετικές Άλπεις έως αγροτικές κτήσεις στο αυστραλιανό outback, από πύργους τηλεπικοινωνιών στη Σαχάρα έως οικολογικά θέρετρα στον Ειρηνικό - έχουμε αποδείξει ότι με τη σωστή μηχανική, η ηλιακή ενέργεια μπορεί να τροφοδοτήσει τα πάντα, παντού, πάντα.',
     'about.feat1.title': 'Μόνο Εξαρτήματα Επιπέδου 1',
     'about.feat1.desc': 'Καθορίζουμε μόνο πιστοποιημένα πάνελ επιπέδου 1, εξουσιοδοτημένους μετατροπείς και αξιόπιστες λύσεις μπαταριών λιθίου από τους κορυφαίους κατασκευαστές.',
     'about.feat2.title': 'Πλήρης Παράδοση Κλειδί στο Χέρι',
-    'about.feat2.desc': 'Έρευνα τοποθεσίας, ενεργειακή ανάλυση, εξατομικευμένος σχεδιασμός, προμήθεια, εγκατάσταση, θέση σε λειτουργία και μακροπρόθεσμη συντήρηση — ελέγχουμε ολόκληρη τη διαδικασία.',
+    'about.feat2.desc': 'Έρευνα τοποθεσίας, ενεργειακή ανάλυση, εξατομικευμένος σχεδιασμός, προμήθεια, εγκατάσταση, θέση σε λειτουργία και μακροπρόθεσμη συντήρηση - ελέγχουμε ολόκληρη τη διαδικασία.',
     'about.feat3.title': 'Παγκόσμια Εμβέλεια, Τοπική Εμπειρογνωσία',
     'about.feat3.desc': 'Το πιστοποιημένο δίκτυο συνεργατών μας λειτουργεί σε 40+ χώρες, προσαρμόζοντας κάθε σχεδιασμό στο τοπικό κλίμα, τους κανονισμούς και τα πρότυπα διασύνδεσης.',
     'about.diag.title': 'Πλήρης Αρχιτεκτονική Συστήματος',
@@ -535,7 +535,7 @@ const T = {
 
     // CTA
     'cta.badge': 'Δωρεάν Διαβούλευση', 'cta.title1': 'ΕΤΟΙΜΟΙ ΝΑ ΓΙΝΕΤΕ', 'cta.title2': 'ΑΝΕΞΑΡΤΗΤΟΙ;',
-    'cta.sub': 'Γίνετε μέλος 500+ σπιτιών, αγροκτημάτων και επιχειρήσεων που έχουν επιτύχει πλήρη ενεργειακή ανεξαρτησία. Οι μηχανικοί μας θα σχεδιάσουν το ιδανικό σύστημα για εσάς — δωρεάν.',
+    'cta.sub': 'Γίνετε μέλος 500+ σπιτιών, αγροκτημάτων και επιχειρήσεων που έχουν επιτύχει πλήρη ενεργειακή ανεξαρτησία. Οι μηχανικοί μας θα σχεδιάσουν το ιδανικό σύστημα για εσάς - δωρεάν.',
     'cta.btn1': 'ΛΑΒΕΤΕ ΤΗΝ ΠΡΟΣΦΟΡΑ ΜΟΥ', 'cta.btn2': 'ΚΑΛΕΣΤΕ ΜΗΧΑΝΙΚΟ',
     'cta.note': 'Μέσος χρόνος απόκρισης: εντός 4 ωρών κατά τις εργάσιμες ημέρες',
 
@@ -550,7 +550,7 @@ const T = {
     'con.next.title': 'Τι Συμβαίνει Στη Συνέχεια;',
     'con.next.s1': 'Εξετάζουμε τις λεπτομέρειες του έργου και τις ενεργειακές απαιτήσεις σας μέσα σε λίγες ώρες',
     'con.next.s2': 'Πιστοποιημένος μηχανικός επικοινωνεί μαζί σας εντός 24 ωρών για δωρεάν διαβούλευση',
-    'con.next.s3': 'Λαμβάνετε εξατομικευμένο σχέδιο, αναφορά διαστασιολόγησης και αναλυτική προσφορά — δωρεάν',
+    'con.next.s3': 'Λαμβάνετε εξατομικευμένο σχέδιο, αναφορά διαστασιολόγησης και αναλυτική προσφορά - δωρεάν',
     'f.name': 'Ονοματεπώνυμο', 'f.email': 'Διεύθυνση Email', 'f.phone': 'Αριθμός Τηλεφώνου',
     'f.location': 'Τοποθεσία / Χώρα', 'f.message': 'Λεπτομέρειες Έργου', 'f.submit': 'ΑΠΟΣΤΟΛΗ ΑΙΤΗΣΗΣ',
     'f.system.label': 'Μέγεθος / Τύπος Συστήματος',
@@ -563,7 +563,7 @@ const T = {
     'thanks.next.title': 'Τι Συμβαίνει Στη Συνέχεια',
     'thanks.next.s1': 'Η ομάδα μας εξετάζει τις λεπτομέρειες του έργου και τις ενεργειακές σας απαιτήσεις',
     'thanks.next.s2': 'Πιστοποιημένος μηχανικός σας καλεί κατά τις εργάσιμες ώρες για να συζητήσει τις ανάγκες σας',
-    'thanks.next.s3': 'Λαμβάνετε εξατομικευμένο σχέδιο συστήματος και αναλυτική προσφορά — εντελώς δωρεάν',
+    'thanks.next.s3': 'Λαμβάνετε εξατομικευμένο σχέδιο συστήματος και αναλυτική προσφορά - εντελώς δωρεάν',
     'thanks.home': 'Επιστροφή στην Αρχική', 'thanks.solutions': 'Εξερευνήστε Λύσεις',
 
     // Footer

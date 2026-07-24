@@ -1,6 +1,6 @@
-# Off Grid Systems — Website
+# Off Grid Systems - Website
 
-Static multi-page website for an off-grid solar energy company. No build step required — open any `.html` file directly in a browser.
+Static multi-page website for an off-grid solar energy company. No build step required - open any `.html` file directly in a browser.
 
 ---
 
@@ -50,10 +50,10 @@ Then visit `http://localhost:8080`.
 ├── sitemap.xml         # Sitemap (off-gridsystems.com URLs)
 ├── images/
 │   ├── logo.jpg        # Company logo (navbar, footer, favicon, og:image)
-│   ├── battery.jpg     # Install photo — lithium battery bank
-│   ├── inv solis.jpg   # Install photo — home hybrid inverter
-│   ├── inverter invt.jpg  # Install photo — three-phase / factory
-│   ├── solis system.jpg   # Install photo — complete power room
+│   ├── battery.jpg     # Install photo - lithium battery bank
+│   ├── inv solis.jpg   # Install photo - home hybrid inverter
+│   ├── inverter invt.jpg  # Install photo - three-phase / factory
+│   ├── solis system.jpg   # Install photo - complete power room
 │   └── README.md       # Notes on gallery image filenames
 ├── css/
 │   └── styles.css      # Custom CSS (navy/green/gold theme, utilities)
@@ -66,7 +66,7 @@ Then visit `http://localhost:8080`.
 
 **Stack:** Tailwind CSS CDN · Font Awesome 6 · Google Fonts (Inter + Rajdhani) · Vanilla JS
 
-**Theme:** The palette is derived from the logo — deep **navy** surfaces, **forest-green** primary accent, and a **gold** secondary accent. Brand tokens live in `js/tailwind.config.js` (`brand`, `gold`, `surface`); matching literals are in `css/styles.css`.
+**Theme:** The palette is derived from the logo - deep **navy** surfaces, **forest-green** primary accent, and a **gold** secondary accent. Brand tokens live in `js/tailwind.config.js` (`brand`, `gold`, `surface`); matching literals are in `css/styles.css`.
 
 ---
 
@@ -78,7 +78,7 @@ Hosted on **GitHub Pages** from the `main` branch (`/` root) at the custom domai
 
 One-time setup (already configured):
 1. **GitHub → Settings → Pages** → Source: `main` / root; Custom domain: `off-gridsystems.com`; Enforce HTTPS.
-2. **Namecheap → Advanced DNS** — `A @` → `185.199.108.153`, `.109.153`, `.110.153`, `.111.153`; `CNAME www` → `kleanthischry.github.io.`
+2. **Namecheap → Advanced DNS** - `A @` → `185.199.108.153`, `.109.153`, `.110.153`, `.111.153`; `CNAME www` → `kleanthischry.github.io.`
 
 > If you ever change the domain, update it in **four** places: `CNAME`, `robots.txt`, `sitemap.xml`, and the `og:image` tags in every `*.html`.
 
@@ -97,18 +97,18 @@ One-time setup (already configured):
 ## Tasks Left To Do
 
 ### Done
-- [x] **Logo** — `images/logo.jpg` is wired into the navbar and footer (in a white chip) on every page.
-- [x] **Real project images** — `projects.html` is now a gallery of actual installation photos in `images/`.
-- [x] **Favicon** — `<link rel="icon">` + `apple-touch-icon` point at the logo on every page.
-- [x] **`og:image`** — added to every page (points at the logo).
-- [x] **`robots.txt` / `sitemap.xml`** — added, pointing at `off-gridsystems.com`.
-- [x] **Logo-matched theme** — palette retuned to the logo's navy / forest-green / gold.
-- [x] **Custom domain** — `CNAME` + absolute `og:image` set to `off-gridsystems.com`; DNS configured (see Deployment above).
-- [x] **FAQ i18n** — all 12 Q&A translated (EN/RU/EL) in `js/faq-i18n.js`; answers use `data-i18n-html` (rich markup preserved); FAQ equipment brands genericised.
-- [x] **Real contact email** — `offgridsystemscy@gmail.com` set across all pages.
-- [x] **Removed fake US phone & address** — stripped the demo phone and Denver address from nav, footers, CTAs, and the contact page (site is now email-only).
+- [x] **Logo** - `images/logo.jpg` is wired into the navbar and footer (in a white chip) on every page.
+- [x] **Real project images** - `projects.html` is now a gallery of actual installation photos in `images/`.
+- [x] **Favicon** - `<link rel="icon">` + `apple-touch-icon` point at the logo on every page.
+- [x] **`og:image`** - added to every page (points at the logo).
+- [x] **`robots.txt` / `sitemap.xml`** - added, pointing at `off-gridsystems.com`.
+- [x] **Logo-matched theme** - palette retuned to the logo's navy / forest-green / gold.
+- [x] **Custom domain** - `CNAME` + absolute `og:image` set to `off-gridsystems.com`; DNS configured (see Deployment above).
+- [x] **FAQ i18n** - all 12 Q&A translated (EN/RU/EL) in `js/faq-i18n.js`; answers use `data-i18n-html` (rich markup preserved); FAQ equipment brands genericised.
+- [x] **Real contact email** - `offgridsystemscy@gmail.com` set across all pages.
+- [x] **Removed fake US phone & address** - stripped the demo phone and Denver address from nav, footers, CTAs, and the contact page (site is now email-only).
 
 ### Must-have
-- [ ] **Wire up the contact form** — `contact.html` submits via `submitForm()` in `main.js` but has no real backend. Connect to a service such as Formspree, EmailJS, or a serverless function so enquiries actually get delivered.
-- [ ] **Remove remaining equipment-brand names** — the `faq.html` answers have been genericised, but brands still appear as the "trusted brands" logo rows on `index.html` and `about.html` (SMA, BYD, Victron) and in a testimonial on `about.html`. Decide whether to genericise or keep these.
+- [ ] **Wire up the contact form** - `contact.html` submits via `submitForm()` in `main.js` but has no real backend. Connect to a service such as Formspree, EmailJS, or a serverless function so enquiries actually get delivered.
+- [ ] **Remove remaining equipment-brand names** - the `faq.html` answers have been genericised, but brands still appear as the "trusted brands" logo rows on `index.html` and `about.html` (SMA, BYD, Victron) and in a testimonial on `about.html`. Decide whether to genericise or keep these.
 

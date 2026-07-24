@@ -1,5 +1,5 @@
 /* ============================================================
-   styles.css — Off Grid Systems
+   styles.css - Off Grid Systems
    Custom styles layered on top of Tailwind CSS utility classes.
    Sections: Reset · Scrollbar · Navbar · Typography · Hero ·
              Cards · Buttons · Forms · Animations · Components ·
@@ -404,7 +404,7 @@ html.light .proj-tags > span { color: #0f7a4d; background: rgba(74,122,60,0.09);
 }
 
 
-/* Dark mode: slate-600 (#475569) has only ~2.9:1 contrast on #0b1220 — boost it */
+/* Dark mode: slate-600 (#475569) has only ~2.9:1 contrast on #0b1220 - boost it */
 .text-slate-600 { color: #94a3b8 !important; }
 
 

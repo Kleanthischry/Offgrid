@@ -1,5 +1,5 @@
 /**
- * main.js — Off Grid Systems
+ * main.js - Off Grid Systems
  *
  * All page behaviour in one file, grouped into logical sections:
  *   1. Navbar scroll effect + back-to-top button
@@ -13,12 +13,12 @@
  *
  * Depends on js/translations.js (loaded first) for the T and LANG_META globals.
  * Functions called via HTML onclick attributes (toggleTheme, setLang,
- * toggleLangMenu, submitForm) must stay in global scope — do not wrap in
+ * toggleLangMenu, submitForm) must stay in global scope - do not wrap in
  * a module or IIFE unless you also export them to window.
  */
 
 /* =========================================================================
-   1. NAVBAR — scroll-triggered frosted-glass effect + back-to-top button
+   1. NAVBAR - scroll-triggered frosted-glass effect + back-to-top button
    ========================================================================= */
 
 const navbar = document.getElementById('navbar');
@@ -89,7 +89,7 @@ const navObserver = new IntersectionObserver(entries => {
       const id = entry.target.id;
       navLinks.forEach(link => {
         const href = link.getAttribute('href') || '';
-        // Only update links that are pure #anchors — leave page links alone
+        // Only update links that are pure #anchors - leave page links alone
         if (href.startsWith('#')) {
           link.classList.toggle('active', href === '#' + id);
         }
@@ -305,7 +305,7 @@ async function submitForm(e) {
     }
   } catch {
     icon.className   = 'fas fa-exclamation-triangle text-xs relative z-10';
-    text.textContent = 'FAILED — TRY AGAIN';
+    text.textContent = 'FAILED - TRY AGAIN';
     btn.disabled     = false;
   }
 }

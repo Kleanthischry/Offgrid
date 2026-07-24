@@ -1,5 +1,5 @@
 /**
- * tailwind.config.js — Off Grid Systems
+ * tailwind.config.js - Off Grid Systems
  *
  * Extends the default Tailwind theme with project-specific design tokens.
  * Loaded synchronously after the Tailwind CDN script so these custom
@@ -15,7 +15,7 @@ tailwind.config = {
       },
 
       colors: {
-        // Forest-green brand palette (from logo) — CTAs, accents, highlights
+        // Forest-green brand palette (from logo) - CTAs, accents, highlights
         brand: {
           50:  '#f2f7ee',
           100: '#dcecd0',
@@ -24,7 +24,7 @@ tailwind.config = {
           600: '#4a7a3c',
           700: '#3a5f30',
         },
-        // Golden accent (from logo sun) — secondary highlights
+        // Golden accent (from logo sun) - secondary highlights
         gold: {
           400: '#f2ba45',
           500: '#e9a62b',
