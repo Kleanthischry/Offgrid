@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://off-gridsystems.com/index.html</loc>
+    <loc>https://off-gridsystems.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://off-gridsystems.com/solutions.html</loc>
+    <loc>https://off-gridsystems.com/solutions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://off-gridsystems.com/projects.html</loc>
+    <loc>https://off-gridsystems.com/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://off-gridsystems.com/about.html</loc>
+    <loc>https://off-gridsystems.com/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://off-gridsystems.com/faq.html</loc>
+    <loc>https://off-gridsystems.com/faq</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://off-gridsystems.com/contact.html</loc>
+    <loc>https://off-gridsystems.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

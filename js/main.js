@@ -66,20 +66,20 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 
 /* =========================================================================
    3. ACTIVE NAV-LINK HIGHLIGHT
-   On multi-page sites each nav link points to a .html file, so we mark the
-   active link by matching the current page filename against each href.
+   On multi-page sites each nav link points to another page, so we mark the
+   active link by matching the current page name against each href.
    The IntersectionObserver is kept for any remaining same-page #anchor links.
    ========================================================================= */
 
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('nav .nav-link');
 
-// Mark the link whose page matches the URL we're currently on
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+// Normalise a path or href to a bare page name; '' (home) becomes 'index'.
+// Works with both extensionless URLs ("/about") and legacy ".html" links.
+const pageName = p => (p || '').split('#')[0].split('/').pop().replace(/\.html$/, '') || 'index';
+const currentPage = pageName(window.location.pathname);
 navLinks.forEach(link => {
-  const href     = link.getAttribute('href') || '';
-  const linkPage = href.split('#')[0] || 'index.html';
-  if (linkPage === currentPage) link.classList.add('active');
+  if (pageName(link.getAttribute('href')) === currentPage) link.classList.add('active');
 });
 
 // Keep the observer for any same-page #anchor links (only toggles those links)
@@ -299,7 +299,7 @@ async function submitForm(e) {
     });
 
     if (res.ok) {
-      window.location.href = 'thanks.html';
+      window.location.href = 'thanks';
     } else {
       throw new Error('Server error');
     }
